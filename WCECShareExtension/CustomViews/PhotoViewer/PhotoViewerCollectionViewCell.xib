@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoViewerCollectionViewCell" customModule="Dev_WCEC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="600"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="600"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kEn-A5-ZNX">
+                        <rect key="frame" x="23" y="236" width="423" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="elS-lr-c74"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kEn-A5-ZNX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="23" id="MuO-yQ-2qV"/>
+                <constraint firstItem="kEn-A5-ZNX" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="cOn-uY-Rlq"/>
+                <constraint firstAttribute="trailing" secondItem="kEn-A5-ZNX" secondAttribute="trailing" constant="23" id="n0u-sc-VxE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="469" height="600"/>
+            <connections>
+                <outlet property="photoImageView" destination="kEn-A5-ZNX" id="z7V-N6-vlN"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="55"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,363 @@
+/* 
+  Localizable.strings
+  WCEC
+
+  Created by hnc on 5/7/18.
+  Copyright © 2018 hnc. All rights reserved.
+*/
+
+// Mark: Global
+"OK" = "OK";
+"The " = "";
+"Yes" = "是";
+"No" = "否";
+"may not be greater than " = "不能多于";
+" characters" = " 字数";
+"Success" = "成功";
+"Your altered image has been saved to your photos." = "您所修饰的图片已储存在相册中";
+
+// Mark: Tabbar
+"Connections" = "人脉";
+"Newsfeed" = "贴文";
+"Messages" = "信息";
+"Me" = "我";
+"WCEC" = "世界华商大会";
+
+// Mark: Registration
+"Registration" = "注册成为会员";
+"E-mail Adress" = "电邮地址";
+"Where did you hear about us?" = "您是如何知道我们推出了这个手机程序？";
+
+// Mark: Authentication
+"Login" = "登录";
+"Sign Up" = "注册";
+"Forgot Password" = "忘记密码";
+"E-mail Address" = "电邮";
+"Password" = "密码";
+"Login with your existing social media account" = "通过现有的社交媒体账号登入";
+"Sign up with e-mail address" = "通过电邮注册";
+"Sign up with your existing social media account" = "通过现有的社交媒体账号注册";
+"Alert" = "通知";
+"Please input first name." = "请输入：名字";
+"Please input family name." = "请输入：姓氏";
+"Please input year of birth." = "请输入：出生年份";
+"Please input year with format YYYY." = "请以YYYY形式输入年份";
+"Please input valid phone code." = "请输入正确的国家/地区代码";
+"Please input valid mobile no." = "请输入有效的手机号";
+"Please select your country." = "请选择：国家/地区";
+"Please input short bio." = "请输入：个人简介";
+"Please setup your profile picture." = "请上载个人图像";
+
+"Please input your email." = "请输入：电邮地址";
+"Invalid email or password." = "电邮/密码输入无效";
+"Please input your password." = "请输入您的密码";
+"Wrong email format" = "电邮格式错误";
+"Sent for Verification" = "已发送，资料核对中";
+"Your information is on verification process. We will send you an e-mail after the verification is successful." = "我们正在核对您所输入的资料，并会在核对完成后，以电邮通知您";
+
+"(Name / E-mail)" = "（姓名/电邮）";
+"Thank you for joining us.\nFirst, we need to verify your mobile no." = "感谢您的加入。系统需先验证您的手机号";
+"Send OTP" = "发送短信验证码";
+"Please input otp" = "发送短信验证码";
+"Resent OTP success, please check again" = "已重发短信验证码。请查看手机短信";
+
+"We sent you an OTP code to your mobile no. Please key in the code below." = "短信验证码已发送至您的手机，请输入";
+"Submit" = "提交";
+"Enter OTP" = "输入短信验证码";
+"Didn't receive a code?" = "成功收到短信验证码？";
+"Retry" = "重试";
+
+"Please enter your e-mail below to reset your password" = "请输入电邮，更改密码";
+"Send" = "发送";
+"Close" = "关闭";
+
+"Link Sent" = "链接已发送";
+"A link to reset your password has been sent to your e-mail." = "更改密码的链接已发送至您的电邮邮箱";
+
+"Set New Password" = "设置新密码";
+"Confirm New Password" = "确认新密码";
+
+"The confirm password doesn't match!" = "新密码与所输入密码不符";
+"Reset Password" = "更改密码";
+"Be a Member >" = "Be a Member >";
+
+// Mark: Setup password
+"(Name / E-mail)" = "（姓名/电邮）";
+"Thank you for joining us. \nPlease set up your password." = "欢迎您的加入。请设置密码";
+"Set your password" = "设置密码";
+"Enter password" = "输入密码";
+"** Password Requirement **" = "密码需至少包含八个字符，并包含以下4类字符的其中3类：大写字母、小写字母、数字、特别符号。";
+"Please input your new password" = "请输入新密码";
+"Please input confirm new password" = "请确认新密码";
+
+// Mark: Setup Intro
+"First Name" = "名字";
+"Family Name" = "姓氏";
+"Year of Birth" = "出生年份";
+"Mobile No." = "手机号";
+"Location" = "所在国家/地区";
+"Intro" = "简介";
+"Select Image" = "选择图像";
+"Camera" = "相机";
+"Collection" = "收藏";
+"Cancel" = "取消";
+"Error" = "错误";
+"Camera not available. Please try again." = "无法启动相机功能，请稍后再试";
+
+//MARK: Agreement
+"Agreement" = "协议";
+"I Agree, Continue" = "我同意，继续";
+
+//MARK: My Industry
+"My Industries" = "我的业务";
+"My Interests" = "我的兴趣";
+"Search tags..." = "搜索标签";
+"Choose at least one to get you more relevant connections" = "请选择至少一项，以助拓展人脉";
+"The industries field is required" = "“业务”为必填栏目，请输入：";
+"The interests field is required" = "“兴趣”为必填栏目，请输入：";
+"Interests" = "兴趣";
+"Industries" = "业务";
+
+//MARK: Current Occupation
+"Current Occupation" = "现任职务";
+"Job Title" = "职衔";
+"Company Name" = "公司名称";
+"HQ Location" = "公司总部所在国家/地区";
+"Current Location" = "您现在所在/居住的国家/地区";
+"From" = "从";
+"To" = "至";
+"Present" = "至今";
+"Description" = "公司简介";
+"Please select job title." = "请选择职衔";
+"Please input company name." = "请输入公司名称";
+"Please select hq location." = "请选择公司总部所在国家/地区";
+"Please select current location." = "请选择您现在所在/居住的国家/地区";
+"Please select from date" = "请输入日期（从）";
+"Please select to date" = "请输入日期（至）";
+"Please input description." = "请输入公司简介";
+"Please select from date valid" = "请选择日期";
+"Occupation" = "职业";
+
+//MARK: Connections
+"Search your connections…" = "搜索人脉网络";
+"Send Request" = "发送请求";
+"Hi, add me to your connection?" = "您好，能把我加为好友吗？";
+"Hi, let’s connect" = "一起交流、拓展人脉"
+"Hi, let’s connect." = "一起交流、拓展人脉."
+
+"Add" = "添加";
+"View" = "阅览";
+"Message" = "信息";
+
+"Send a message to" = "发送信息至";
+"Requests" = "请求";
+"Connected" = "已成功搭建人脉";
+"We found some suggestions for you" = "新建议的人脉";
+"Received" = "已收悉";
+"Sent" = "已发送";
+"Connection Requests" = "添加人脉";
+"See All" = "显示全部";
+"Search" = "搜索";
+"Apply Filters" = "筛选";
+"Clear All" = "全部清除";
+"Scan QR Code" = "扫描二维码";
+"Invite People…" = "邀请";
+"Align QR Code to scan" = "对齐二维码";
+"My QR Code" = "我的二维码";
+"Something went wrong, please try again later" = "出现状况，稍后再试";
+"OK, Got It" = "好的，知道了";
+"Tap Add button to connect" = "连接请按“添加”键";
+"Tap on picture to view profile" = "阅览用户简介，请点击个人图像";
+" mutual connections" = " 共同的人脉";
+" mutual connection" = " 共同的人脉";
+"Mutual Connections" = "共同的人脉";
+"You have " = "您有";
+" request" = " 请求";
+" requests" = " 请求";
+"Cancel Request" = "Cancel Request (Chinese)";
+"Are you sure you want to cancel your request to " = "您确定要取消加添 %@ 的请求吗？";
+
+//MARK: Invite People
+"Please search and download WCEC app in AppStore and PlayStore" = "请到苹果 AppStore, 安卓 PlayStore 搜索和下载世界华商大会应用程序";
+
+//MARK: New Post
+"New Post" = "新贴文";
+"Post Setting" = "贴文设置";
+"Add Tags" = "添加标签";
+"Only visible to your connection" = "只向人脉展示";
+"Visible to everyone" = "公开展示";
+"Post" = "贴文";
+"Write something..." = "创建新贴文";
+"Selected Tags" = "已选标签";
+"Suggested Tags" = "建议标签";
+"Search tags..." = "搜索标签";
+"Tags" = "标签";
+"Add at least one tag to help others see your post" = "为协助其他用户找到您的贴文，请加上至少一个标签";
+"Private" = "隐私贴文";
+
+//MARK: Gallery
+"All Photos" = "所有图片";
+"All Videos" = "所有视频";
+"Start Sending Photos" = "开始发送图片";
+"In iPhone settings, tap WCEC and turn on Photos" = "在苹果手机的设置选项中点击世界华商大会应用程序，开启图片功能";
+"Open Settings" = "开启设置";
+"Please select at most 10 photos" = "最多可选择10张图片";
+
+//MARK: Navigation
+"Add" = "添加";
+"Cancel" = "取消";
+"Next" = "下一个";
+"Done" = "完成";
+"Save" = "储存";
+
+//MARK: Profile
+"Share via" = "分享";
+"Block" = "屏蔽用户";
+"Unblock" = "解除屏蔽";
+"You will no longer be connected to " = "您再也不能%@联系";
+"mutual connections" = "共同人脉";
+"Basic Info" = "基本资料";
+"Posts" = "贴文";
+
+//MARK: Newfeed
+"News Feed" = "动态";
+"Featured Posts" = "最新信息";
+"Like" = "赞";
+"Comment" = "留言";
+"Share" = "分享";
+"Likes" = "赞";
+"Comments" = "留言";
+"Shares" = "分享";
+"See more" = "更多";
+"Tap on + to create a post" = "创建新贴文，请按“+”键";
+"Scroll down to see more content" = "预览更多内容，请往下滑动";
+"photos" = "图片";
+"photo" = "图片";
+"Confirm" = "确定";
+"This post will be deleted and you won't be able to find it anymore." = "永久性删除这篇贴文";
+"Post has been shared successfully" = "已成功分享贴文";
+"This comment will be deleted and you won't be able to find it anymore." = "永久性删除这段评论";
+"Please input comment" = "请输入评论";
+"No Result" = "查无结果";
+"Edit Post" = "修改贴文";
+"Delete Post" = "删除贴文";
+"Report Post" = "举报贴文";
+"Report" = "举报";
+"Please help us understand what is inappropriate to this post" = "这篇贴文有何不妥？请告诉我们。";
+"Report Messages" = "举报信息";
+"Write down reason for report" = "请输入举报原因";
+"Your report has been sent successfully" = "您已经成功举报";
+"Trending now" = "热搜";
+"Leave comments…" = "留言";
+"Photos" = "图片";
+"Videos" = "短频";
+
+//MARK: Filter Connections
+"Locations" = "地点";
+"Industries" = "行业";
+"Interests" = "兴趣";
+"Filter" = "筛选";
+
+//MAR: Quotes
+"Skip Intro" = "跳过简介";
+"See messages from the Directors" = "翘楚名言";
+"'s Message" = "的信息";
+" at " = " at  (Chinese)";
+
+//MARK: My Profile
+"Notifications" = "通知";
+"Settings" = "设置";
+"Enable Notifications" = "开启“通知”功能";
+"Language" = "语言";
+"Change Password" = "更改密码";
+"FAQ" = "常见问题";
+"Current password" = "现有密码";
+"New password" = "新密码";
+"My Profile" = "我的档案";
+"Edit Intro" = "更新简介";
+"Create New Post" = "创建新贴文";
+"Log Out" = "退出登录";
+"Save error" = "储存失败";
+"Saved!" = "已储存";
+"Your altered image has been saved to your photos." = "您的图像已储存至相册当中";
+"Please input your current password" = "请输入现有密码";
+"Your password has been changed successfully" = "您已成功更改密码";
+"Edit Intro" = "更新简介";
+"Edit Occupation" = "更新职业";
+"Password Changed" = "密码更改成功";
+"Set your industries to give you more relevant suggestion" = "请输入“业务”栏目，以便获取更多相关的人脉建议";
+"Set your interests to give you more relevant suggestion" = "请输入“兴趣”栏目，以便获取更多相关的人脉建议";
+
+//MARK: Chat
+"New Conversation" = "新对话";
+"You left" = "已退出";
+"You can't send messages to this group because you're no longer a participant" = "您已退出群组，再也无法发送信息";
+"Do you really want to decline this conversation" = "确定要回拒吗？";
+
+//MARK: Message
+"Build up relationship with your connections!" = "拓展人脉";
+"Start New Conversation" = "开始新的对话";
+"New Message" = "新简讯";
+"Info" = "相关信息";
+"Clear Chat" = "删除对话记录";
+"Exit Group" = "退出群组";
+"Do you want to remove this user" = "删除用户？";
+"Do you want to clear chat" = "删除简讯？";
+"Do you want to exit group" = "要离开群组？";
+"Do you want to share this post?" = "要分享这则贴文?";
+"Say something!" = "聊两句吧！";
+" has sent you a message" = " 发了简讯给您";
+"Delete" = "删除";
+"Do you really want to delete this conversation?" = "确定要删除对话内容？";
+"You will no longer be a part of this group. You will unable to view or send any chat." = "您已退出群组，再也无法发送任何简讯";
+"Clearing all chat history in this conversation" = "正在删除所有对话内容";
+
+//MARK: Time ago
+"years ago" = "年前";
+"Last year" = "去年";
+"months ago" = "个月前";
+"Last month" = "上个月";
+"weeks ago" = "个星期前";
+"Last week" = "上星期";
+"days ago" = "天前";
+"Yesterday" = "昨天";
+"hours ago" = "个小时前";
+"An hour ago" = "1小时前";
+"minutes ago" = "分钟前";
+"A minute ago" = "1分钟前";
+"seconds ago" = "秒前";
+"Just now" = "刚刚";
+"Participants" = "成员";
+"Participant" = "成员";
+"Admin" = "系统管理员";
+"Please input group name" = "请输入群组名称";
+"Invited you to this group chat" = "邀请您加入群组";
+
+//MARK: Guess
+"Please input Where did you hear about us" = "请告诉我们：您是如何知道我们推出了这个手机程序？";
+
+"Others" = "其他";
+
+
+
+//MARK: Job TITLE
+"Executive Chairman" = "执行主席";
+"Chairman / President" = "主席 / 董事长";
+"Board Director" = "董事";
+"Partner" = "合伙人";
+"Chief Executive Officer" = "总裁／执行长";
+"Chief Financial Officer" = "财务总监";
+"Chief Operation Officer" = "营运总监";
+"Chief Technology Officer" = "技术总监";
+"Chief Marketing Officer" = "营销总监";
+"General Manager" = "总经理";
+"Managing Director" = "董事经理";
+"Senior Vice-President" = "高级副总裁";
+"Vice-President" = "副总裁";
+"Department Director" = "部门主任";
+"Senior Manager" = "高级经理";
+"Manager" = "经理";
+"Others (please specify)" = "其他（请填写)";
+
+// MARK: INDUSTRY SECTOR
+"Test Civil engineering works" = "食品、饮料制造业";

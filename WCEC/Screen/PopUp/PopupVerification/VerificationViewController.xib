@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerificationViewController" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="descOneLabel" destination="F3T-kE-VPI" id="Vvk-xq-cfB"/>
+                <outlet property="descTwoLabel" destination="Kfk-d6-n9a" id="j9A-3Q-9pm"/>
+                <outlet property="gotoMainButton" destination="7BJ-nF-zzn" id="NyH-Ow-kId"/>
+                <outlet property="loginButton" destination="frM-g9-fHq" id="3WM-cm-B5p"/>
+                <outlet property="titleLabel" destination="AoB-AG-5VK" id="VTF-Ic-DoN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BJ-nF-zzn">
+                    <rect key="frame" x="15" y="604" width="345" height="48"/>
+                    <color key="backgroundColor" red="0.76470588235294112" green="0.12941176470588234" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="V7C-XT-l7P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Go To Main Page">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGotoMainPage:" destination="-1" eventType="touchUpInside" id="bdF-wL-AN7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frM-g9-fHq">
+                    <rect key="frame" x="15" y="541" width="345" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="aTy-Dk-1Dl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapLogin:" destination="-1" eventType="touchUpInside" id="ltM-6t-E1p"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent for Verification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoB-AG-5VK">
+                    <rect key="frame" x="50" y="50" width="275" height="27.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shape" translatesAutoresizingMaskIntoConstraints="NO" id="iTW-fN-Pb4">
+                    <rect key="frame" x="167.5" y="87.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Zzl-Gy-UZz"/>
+                        <constraint firstAttribute="width" constant="40" id="zK3-vW-cQJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for joining us. We will work on the verification of your account and will inform you via e-mail." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3T-kE-VPI">
+                    <rect key="frame" x="20" y="147.5" width="335" height="65.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meanwhile, you can browse through our WCEC homepage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfk-d6-n9a">
+                    <rect key="frame" x="20" y="233" width="335" height="44"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kfk-d6-n9a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="05r-TX-dOs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="frM-g9-fHq" secondAttribute="trailing" constant="15" id="0lu-d0-CE8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7BJ-nF-zzn" secondAttribute="bottom" constant="15" id="0pW-ce-VgM"/>
+                <constraint firstItem="frM-g9-fHq" firstAttribute="top" relation="lessThanOrEqual" secondItem="Kfk-d6-n9a" secondAttribute="bottom" constant="264" id="3Wj-S3-FNO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kfk-d6-n9a" secondAttribute="trailing" constant="20" id="Cln-fM-L8O"/>
+                <constraint firstItem="7BJ-nF-zzn" firstAttribute="top" secondItem="frM-g9-fHq" secondAttribute="bottom" constant="15" id="EmM-yz-c6p"/>
+                <constraint firstItem="iTW-fN-Pb4" firstAttribute="top" secondItem="AoB-AG-5VK" secondAttribute="bottom" constant="10" id="Rrd-Dq-4Lw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AoB-AG-5VK" secondAttribute="trailing" constant="50" id="SfK-Hm-r3e"/>
+                <constraint firstItem="iTW-fN-Pb4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V2p-lb-cDb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7BJ-nF-zzn" secondAttribute="trailing" constant="15" id="Zc6-tY-Pbx"/>
+                <constraint firstItem="7BJ-nF-zzn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="bVX-XD-Rm6"/>
+                <constraint firstItem="Kfk-d6-n9a" firstAttribute="top" secondItem="F3T-kE-VPI" secondAttribute="bottom" constant="20" id="eO2-Cj-nOJ"/>
+                <constraint firstItem="AoB-AG-5VK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="es0-T9-ONO"/>
+                <constraint firstItem="F3T-kE-VPI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="feO-ZY-Gx4"/>
+                <constraint firstItem="F3T-kE-VPI" firstAttribute="top" secondItem="iTW-fN-Pb4" secondAttribute="bottom" constant="20" id="joC-sY-sac"/>
+                <constraint firstItem="frM-g9-fHq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="lVD-oL-DpK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F3T-kE-VPI" secondAttribute="trailing" constant="20" id="unv-84-yTs"/>
+                <constraint firstItem="AoB-AG-5VK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="zcz-QD-d8a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shape" width="32" height="32"/>
+    </resources>
+</document>

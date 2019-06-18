@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDateView" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="DiF-iE-ajp"/>
+                <outlet property="imgDate" destination="p1E-G1-Mp3" id="ZPE-Lk-Mhk"/>
+                <outlet property="lblDate" destination="LiV-hQ-ug6" id="YMg-1i-8eY"/>
+                <outlet property="lblTitle" destination="asu-0z-Dyg" id="Mfx-i8-G9g"/>
+                <outlet property="viewDate" destination="DWi-tH-6X9" id="oJL-Rn-4XH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asu-0z-Dyg">
+                    <rect key="frame" x="0.0" y="0.0" width="365" height="19.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWi-tH-6X9">
+                    <rect key="frame" x="0.0" y="23.5" width="375" height="40.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="LiV-hQ-ug6">
+                            <rect key="frame" x="16" y="20" width="320" height="0.0"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="p1E-G1-Mp3">
+                            <rect key="frame" x="341" y="7.5" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="IOZ-AZ-U9b"/>
+                                <constraint firstAttribute="width" constant="24" id="iwn-28-hZu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="p1E-G1-Mp3" firstAttribute="leading" secondItem="LiV-hQ-ug6" secondAttribute="trailing" constant="5" id="JqL-tV-oRy"/>
+                        <constraint firstItem="p1E-G1-Mp3" firstAttribute="centerY" secondItem="DWi-tH-6X9" secondAttribute="centerY" id="fuY-Pc-xVf"/>
+                        <constraint firstItem="LiV-hQ-ug6" firstAttribute="leading" secondItem="DWi-tH-6X9" secondAttribute="leading" constant="16" id="pCD-b0-U9f"/>
+                        <constraint firstItem="LiV-hQ-ug6" firstAttribute="centerY" secondItem="DWi-tH-6X9" secondAttribute="centerY" id="qAc-PU-b3T"/>
+                        <constraint firstAttribute="trailing" secondItem="p1E-G1-Mp3" secondAttribute="trailing" constant="10" id="yiH-jv-A8e"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP4-a3-9T3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <connections>
+                        <action selector="onPressView:" destination="-1" eventType="touchUpInside" id="Mqs-g8-po0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KP4-a3-9T3" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="6rn-I0-gmT"/>
+                <constraint firstItem="DWi-tH-6X9" firstAttribute="top" secondItem="asu-0z-Dyg" secondAttribute="bottom" constant="4" id="7nS-Vn-ayW"/>
+                <constraint firstItem="DWi-tH-6X9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8vR-ao-fct"/>
+                <constraint firstItem="asu-0z-Dyg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ADX-78-KAw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="asu-0z-Dyg" secondAttribute="trailing" constant="10" id="JIw-jH-6Ly"/>
+                <constraint firstItem="KP4-a3-9T3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Z98-wk-2rx"/>
+                <constraint firstItem="KP4-a3-9T3" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fML-u8-Zcy"/>
+                <constraint firstItem="asu-0z-Dyg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="g7u-V7-6oa"/>
+                <constraint firstItem="KP4-a3-9T3" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="j7D-li-E6v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DWi-tH-6X9" secondAttribute="trailing" id="lUs-Ru-cqp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DWi-tH-6X9" secondAttribute="bottom" id="n4Q-sm-LBf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar" width="24" height="24"/>
+    </resources>
+</document>

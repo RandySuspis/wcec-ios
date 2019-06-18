@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupExitGroup" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="nRH-7e-xUq" id="mHq-8m-4UZ"/>
+                <outlet property="descLabel" destination="dks-Ex-Xbg" id="KfP-bX-dSQ"/>
+                <outlet property="exitButton" destination="sfc-BQ-RdV" id="MSb-Iz-SbB"/>
+                <outlet property="titleLabel" destination="UFl-KZ-7U2" id="rts-l9-IwP"/>
+                <outlet property="view" destination="CWx-NN-eXP" id="Ych-TY-U8r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CWx-NN-eXP">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haj-uf-xKO">
+                    <rect key="frame" x="20" y="90" width="335" height="302.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFl-KZ-7U2">
+                            <rect key="frame" x="20" y="24" width="295" height="44"/>
+                            <string key="text">Exit Group
+New Conversation</string>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will no longer be a part of this group. You will unable to view or send any chat." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dks-Ex-Xbg">
+                            <rect key="frame" x="20" y="91" width="295" height="65.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRH-7e-xUq">
+                            <rect key="frame" x="0.0" y="206.5" width="335" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="ySk-oa-zXc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapCancel:" destination="-1" eventType="touchUpInside" id="dsF-wX-TQ0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-BQ-RdV">
+                            <rect key="frame" x="0.0" y="254.5" width="335" height="48"/>
+                            <color key="backgroundColor" red="0.76470588240000004" green="0.1529411765" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="4Wu-R7-WR1"/>
+                            </constraints>
+                            <state key="normal" title="Exit Group">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapExit:" destination="-1" eventType="touchUpInside" id="WRh-OU-hSh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOg-9G-xcn">
+                            <rect key="frame" x="295" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="FtI-44-5Yt"/>
+                                <constraint firstAttribute="height" constant="40" id="RbC-KO-Eqj"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="tapClose:" destination="-1" eventType="touchUpInside" id="GeF-Pd-Llp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wOg-9G-xcn" secondAttribute="trailing" id="1iQ-sZ-ce9"/>
+                        <constraint firstAttribute="trailing" secondItem="dks-Ex-Xbg" secondAttribute="trailing" constant="20" id="2ey-Ej-yfX"/>
+                        <constraint firstItem="nRH-7e-xUq" firstAttribute="top" secondItem="dks-Ex-Xbg" secondAttribute="bottom" constant="50" id="CL8-R5-BLr"/>
+                        <constraint firstAttribute="trailing" secondItem="nRH-7e-xUq" secondAttribute="trailing" id="Gc2-Re-Z5H"/>
+                        <constraint firstAttribute="trailing" secondItem="sfc-BQ-RdV" secondAttribute="trailing" id="HRa-gZ-MEG"/>
+                        <constraint firstItem="UFl-KZ-7U2" firstAttribute="leading" secondItem="haj-uf-xKO" secondAttribute="leading" constant="20" id="HV6-vi-8Ek"/>
+                        <constraint firstAttribute="bottom" secondItem="sfc-BQ-RdV" secondAttribute="bottom" id="Lfn-SJ-rsN"/>
+                        <constraint firstItem="nRH-7e-xUq" firstAttribute="leading" secondItem="haj-uf-xKO" secondAttribute="leading" id="OGL-IS-f1L"/>
+                        <constraint firstItem="dks-Ex-Xbg" firstAttribute="top" secondItem="UFl-KZ-7U2" secondAttribute="bottom" constant="23" id="cW3-p6-qJK"/>
+                        <constraint firstAttribute="trailing" secondItem="UFl-KZ-7U2" secondAttribute="trailing" constant="20" id="cXs-3S-dSR"/>
+                        <constraint firstItem="dks-Ex-Xbg" firstAttribute="leading" secondItem="haj-uf-xKO" secondAttribute="leading" constant="20" id="fkM-v7-Tlg"/>
+                        <constraint firstItem="sfc-BQ-RdV" firstAttribute="top" secondItem="nRH-7e-xUq" secondAttribute="bottom" id="l64-dg-F3F"/>
+                        <constraint firstItem="sfc-BQ-RdV" firstAttribute="leading" secondItem="haj-uf-xKO" secondAttribute="leading" id="lPd-GS-Uqk"/>
+                        <constraint firstItem="wOg-9G-xcn" firstAttribute="top" secondItem="haj-uf-xKO" secondAttribute="top" id="uUI-Ig-iiV"/>
+                        <constraint firstItem="UFl-KZ-7U2" firstAttribute="top" secondItem="haj-uf-xKO" secondAttribute="top" constant="24" id="wmx-eU-uQp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="haj-uf-xKO" firstAttribute="leading" secondItem="dkZ-Zr-YZR" secondAttribute="leading" constant="20" id="3gv-Qd-eKG"/>
+                <constraint firstItem="haj-uf-xKO" firstAttribute="top" secondItem="dkZ-Zr-YZR" secondAttribute="top" constant="70" id="Ezw-dW-dRK"/>
+                <constraint firstItem="dkZ-Zr-YZR" firstAttribute="trailing" secondItem="haj-uf-xKO" secondAttribute="trailing" constant="20" id="Wsp-Zv-Z0b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="dkZ-Zr-YZR"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="24" height="24"/>
+    </resources>
+</document>

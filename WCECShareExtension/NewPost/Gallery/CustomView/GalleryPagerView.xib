@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryPagerView" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="photosBtn" destination="8qd-aY-J1i" id="8aA-sQ-n5y"/>
+                <outlet property="videosBtn" destination="wCu-cy-Tmn" id="K01-S0-lRT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qd-aY-J1i">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="58"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Photos">
+                        <color key="titleColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="RhH-0b-5fD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCu-cy-Tmn">
+                    <rect key="frame" x="188" y="0.0" width="187" height="58"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Videos">
+                        <color key="titleColor" white="0.0" alpha="0.87" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="T4k-XB-c0z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8qd-aY-J1i" secondAttribute="bottom" id="73Q-4G-91U"/>
+                <constraint firstItem="wCu-cy-Tmn" firstAttribute="width" secondItem="8qd-aY-J1i" secondAttribute="width" id="A1f-ol-tIu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wCu-cy-Tmn" secondAttribute="bottom" id="CWX-Xc-GOy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wCu-cy-Tmn" secondAttribute="trailing" id="Fwl-iR-LUh"/>
+                <constraint firstItem="wCu-cy-Tmn" firstAttribute="leading" secondItem="8qd-aY-J1i" secondAttribute="trailing" id="hZS-gE-lCo"/>
+                <constraint firstItem="wCu-cy-Tmn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qQy-L0-rzo"/>
+                <constraint firstItem="8qd-aY-J1i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uav-DS-NAy"/>
+                <constraint firstItem="8qd-aY-J1i" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="v72-im-uwi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

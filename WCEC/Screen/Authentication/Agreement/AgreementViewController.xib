@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgreementViewController" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeButton" destination="eXd-0E-SIQ" id="cqg-p4-RLb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cuB-gr-Z4R">
+                    <rect key="frame" x="0.0" y="20" width="375" height="582"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Think back over your life. Think about the people that had a positive influence on you. If your past was like mine, many of them didn’t realize the impact they made. The influence was usually due to them caring about you and doing some little thing. What little things have been done for you that changed your life? What little things have you done for someone else that might have changed theirs?
+
+I have been influenced by little things done by others.
+
+I had a boss that asked whether I had the guts to take a job he felt I could do. It was a job I wasn’t even qualified to apply for. That question influenced me to set my career goals at a higher level and faster pace than they were at that time.
+
+When I attended my first Toastmasters meeting the group made me feel welcome from the moment I set foot in the room. One person made it a point to introduce me to several members before the first meeting started. Another leaned over to me on my second visit, just before my first speech, to let me know what to expect and to let me know I would do great. I am grateful to both of them.
+
+Children can influence us as well. A great example of this happened to me at a Cub Scout summer camp here in my hometown of Fredericksburg, Virginia. For those of you who are not familiar with Cub Scouts, the boys range from 1st through 5th grade. I showed up on the morning of the first day of camp just to make sure everything went smooth for our group. We got everyone registered for the week’s events, set up a canopy where the scouts and leaders could get under some shade for lunch and then header.</string>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXd-0E-SIQ">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <color key="backgroundColor" red="0.76470588240000004" green="0.12941176469999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="7Cb-ro-Z6V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="I Agree, Continue">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onSelectAgree:" destination="-1" eventType="touchUpInside" id="O2v-2E-JsI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eXd-0E-SIQ" firstAttribute="top" secondItem="cuB-gr-Z4R" secondAttribute="bottom" constant="17" id="LEM-Ot-Q1b"/>
+                <constraint firstItem="cuB-gr-Z4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MSc-PM-urG"/>
+                <constraint firstItem="eXd-0E-SIQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VDX-MX-5jJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eXd-0E-SIQ" secondAttribute="trailing" id="Wzs-Yg-6cR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eXd-0E-SIQ" secondAttribute="bottom" id="aJ2-x7-rD0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cuB-gr-Z4R" secondAttribute="trailing" id="vzx-Vg-ssg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="cuB-gr-Z4R" secondAttribute="top" id="ydy-dh-BxQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

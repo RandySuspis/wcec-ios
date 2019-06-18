@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DateSeperatorTableViewCell" customModule="Dev_WCEC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maj-yL-RG0" userLabel="Date Seperator View">
+                        <rect key="frame" x="0.0" y="9" width="320" height="24"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqc-YN-LIo" userLabel="Left Line View">
+                                <rect key="frame" x="0.0" y="11.5" width="120" height="1"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ede-R3-W7g"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Sep, 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grV-sI-N4R" userLabel="Date Label">
+                                <rect key="frame" x="124" y="4" width="72" height="16.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDQ-OI-x5B" userLabel="Right Line View">
+                                <rect key="frame" x="200" y="11.5" width="120" height="1"/>
+                                <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4CC-j0-4pw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="grV-sI-N4R" firstAttribute="leading" secondItem="Bqc-YN-LIo" secondAttribute="trailing" constant="4" id="12l-Pc-bl8"/>
+                            <constraint firstItem="uDQ-OI-x5B" firstAttribute="leading" secondItem="grV-sI-N4R" secondAttribute="trailing" constant="4" id="G0b-hW-qX5"/>
+                            <constraint firstItem="grV-sI-N4R" firstAttribute="centerY" secondItem="maj-yL-RG0" secondAttribute="centerY" id="IOM-lh-iMF"/>
+                            <constraint firstItem="uDQ-OI-x5B" firstAttribute="centerY" secondItem="maj-yL-RG0" secondAttribute="centerY" id="QTr-M4-Hbh"/>
+                            <constraint firstAttribute="trailing" secondItem="uDQ-OI-x5B" secondAttribute="trailing" id="T8h-Eg-pts"/>
+                            <constraint firstItem="grV-sI-N4R" firstAttribute="centerX" secondItem="maj-yL-RG0" secondAttribute="centerX" id="Zkr-3c-WRa"/>
+                            <constraint firstAttribute="height" constant="24" id="bCy-PS-gID" userLabel="Date Seperator View Height"/>
+                            <constraint firstItem="Bqc-YN-LIo" firstAttribute="centerY" secondItem="maj-yL-RG0" secondAttribute="centerY" id="jFh-Ao-Fet"/>
+                            <constraint firstItem="Bqc-YN-LIo" firstAttribute="leading" secondItem="maj-yL-RG0" secondAttribute="leading" id="zDN-JN-g4Q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="maj-yL-RG0" secondAttribute="trailing" id="41g-sN-1Wg"/>
+                    <constraint firstItem="maj-yL-RG0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="RtX-IY-smH"/>
+                    <constraint firstAttribute="bottom" secondItem="maj-yL-RG0" secondAttribute="bottom" constant="10" id="fRM-AI-41L"/>
+                    <constraint firstItem="maj-yL-RG0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ufp-fO-uUM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateSeperatorLabel" destination="grV-sI-N4R" id="7C5-YI-g3J"/>
+                <outlet property="dateSeperatorView" destination="maj-yL-RG0" id="Ht2-uZ-fhE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

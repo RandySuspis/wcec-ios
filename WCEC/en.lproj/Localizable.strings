@@ -1,0 +1,362 @@
+/* 
+  Localizable.strings
+  WCEC
+
+  Created by hnc on 5/7/18.
+  Copyright © 2018 hnc. All rights reserved.
+*/
+
+// Mark: Global
+"OK" = "OK";
+"The " = "The ";
+"Yes" = "Yes";
+"No" = "No";
+"may not be greater than " = "may not be greater than ";
+" characters" = " characters";
+"Success" = "Success";
+"Your altered image has been saved to your photos." = "Your altered image has been saved to your photos.";
+
+// Mark: Tabbar
+"Connections" = "Connections";
+"Newsfeed" = "Posts";
+"Messages" = "Messages";
+"Me" = "Me";
+"WCEC" = "WCEC";
+
+// Mark: Registration
+"Registration" = "Registration";
+"E-mail Adress" = "E-mail Adress";
+"Where did you hear about us?" = "Where did you hear about us?";
+
+// Mark: Authentication
+"Login" = "Login";
+"Sign Up" = "Sign Up";
+"Forgot Password" = "Forgot Password";
+"E-mail Address" = "E-mail Address";
+"Password" = "Password";
+"Login with your existing social media account" = "Login with your existing social media account";
+"Sign up with e-mail address" = "Sign up with e-mail address";
+"Sign up with your existing social media account" = "Sign up with your existing social media account";
+"Alert" = "Alert";
+"Please input first name." = "Please input first name.";
+"Please input family name." = "Please input family name.";
+"Please input year of birth." = "Please input year of birth.";
+"Please input year with format YYYY." = "Please input year with format YYYY.";
+"Please input valid phone code." = "Please input valid country code.";
+"Please input valid mobile no." = "Please input valid mobile no.";
+"Please select your country." = "Please select your country.";
+"Please input short bio." = "Please input short bio.";
+"Please setup your profile picture." = "Please setup your profile picture.";
+
+"Please input your email." = "Please input your email.";
+"Invalid email or password." = "Invalid email or password.";
+"Please input your password." = "Please input your password.";
+"Wrong email format" = "Wrong email format";
+"Sent for Verification" = "Sent for Verification";
+"Your information is on verification process. We will send you an e-mail after the verification is successful." = "Your information is on verification process. We will send you an e-mail after the verification is successful.";
+
+"(Name / E-mail)" = "(Name / E-mail)";
+"Thank you for joining us.\nFirst, we need to verify your mobile no." = "Thank you for joining us.\nFirst, we need to verify your mobile no.";
+"Send OTP" = "Send SMS Verification Code";
+
+"We sent you an OTP code to your mobile no. Please key in the code below." = "We sent you a SMS verification code to your mobile no. Please key in the code below.";
+"Submit" = "Submit";
+"Enter OTP" = "Enter SMS verification code";
+"Didn't receive a code?" = "Don’t receive a code?";
+"Retry" = "Retry";
+"Please input otp" = "Please input SMS verification code";
+"Resent OTP success, please check again" = "Resent SMS verification code successfully, please check again";
+
+"Please enter your e-mail below to reset your password" = "Please enter your e-mail below to reset your password";
+"Send" = "Send";
+"Close" = "Close";
+
+"Link Sent" = "Link Sent";
+"A link to reset your password has been sent to your e-mail." = "A link to reset your password has been sent to your e-mail.";
+
+"Set New Password" = "Set New Password";
+"Confirm New Password" = "Confirm New Password";
+
+"The confirm password doesn't match!" = "The confirm password doesn't match!";
+"Reset Password" = "Reset Password";
+"Be a Member >" = "Be a Member >";
+
+// Mark: Setup password
+"(Name / E-mail)" = "(Name / E-mail)";
+"Thank you for joining us. \nPlease set up your password." = "Thank you for joining us. \nPlease set up your password.";
+"Set your password" = "Set your password";
+"Enter password" = "Enter password";
+"** Password Requirement **" = "Your password must contain at least three of the following four types of characters: Uppercase letters, Lowercase letters, Numbers, Special characters. And at least 8 characters.";
+"Please input your new password" = "Please input your new password";
+"Please input confirm new password" = "Please input confirm new password";
+
+// Mark: Setup Intro
+"First Name" = "First Name";
+"Family Name" = "Family Name";
+"Year of Birth" = "Year of Birth";
+"Mobile No." = "Mobile No.";
+"Location" = "Location";
+"Intro" = "Intro";
+"Select Image" = "Select Image";
+"Camera" = "Camera";
+"Collection" = "Collection";
+"Cancel" = "Cancel";
+"Error" = "Error";
+"Camera not available. Please try again." = "Camera not available. Please try again.";
+
+//MARK: Agreement
+"Agreement" = "Agreement";
+"I Agree, Continue" = "I Agree, Continue";
+
+//MARK: My Industry
+"My Industries" = "My Industries";
+"My Interests" = "My Interests";
+"Search tags..." = "Search tags...";
+"Choose at least one to get you more relevant connections" = "Choose at least one to get you more relevant connections";
+"The industries field is required" = "The industries field is required";
+"The interests field is required" = "The interests field is required";
+"Interests" = "Interests";
+"Industries" = "Industries";
+
+//MARK: Current Occupation
+"Current Occupation" = "Current Occupation";
+"Job Title" = "Job Title";
+"Company Name" = "Company Name";
+"HQ Location" = "HQ Location";
+"Current Location" = "Current Location";
+"From" = "From";
+"To" = "To";
+"Description" = "Description";
+"Present" = "Present";
+"Please select job title." = "Please select job title.";
+"Please input company name." = "Please input company name.";
+"Please select hq location." = "Please select hq location.";
+"Please select current location." = "Please select current location.";
+"Please select from date" = "Please select from date";
+"Please select to date" = "Please select to date";
+"Please input description." = "Please input description.";
+"Please select from date valid" = "Please select from date valid";
+"Occupation" = "Occupation";
+
+//MARK: Connections
+"Search your connections…" = "Search your connections…";
+"Send Request" = "Send Request";
+"Hi, add me to your connection?" = "Hi, add me to your connection?";
+"Hi, let’s connect" = "Hi, let’s connect"
+"Hi, let’s connect." = "Hi, let’s connect."
+
+"Add" = "Add";
+"View" = "View";
+"Message" = "Message";
+
+"Send a message to" = "Send a message to";
+"Requests" = "Requests";
+"Connected" = "Connected";
+"We found some suggestions for you" = "We found some suggestions for you";
+"Received" = "Received";
+"Sent" = "Sent";
+"Connection Requests" = "Connection Requests";
+"See All" = "See All";
+"Search" = "Search";
+"Apply Filters" = "Apply Filters";
+"Clear All" = "Clear All";
+"Scan QR Code" = "Scan QR Code";
+"Invite People…" = "Invite People…";
+"Align QR Code to scan" = "Align QR Code to scan";
+"My QR Code" = "My QR Code";
+"Something went wrong, please try again later" = "Something went wrong, please try again later";
+"OK, Got It" = "OK, Got It";
+"Tap Add button to connect" = "Tap Add button to connect";
+"Tap on picture to view profile" = "Tap on picture to view profile";
+" mutual connections" = " mutual connections";
+" mutual connection" = " mutual connection";
+"You have " = "You have ";
+" request" = " request";
+" requests" = " requests";
+"Cancel Request" = "Cancel Request";
+"Are you sure you want to cancel your request to " = "Are you sure you want to cancel your request to %@?";
+
+//MARK: Filter Connections
+"Locations" = "Locations";
+"Industries" = "Industries";
+"Interests" = "Interests";
+"Filter" = "Filter";
+
+//MARK: Invite People
+"Please search and download WCEC app in AppStore and PlayStore" = "Please search and download WCEC app in AppStore and PlayStore";
+
+//MARK: New Post
+"New Post" = "New Post";
+"Post Setting" = "Post Setting";
+"Add Tags" = "Add Tags";
+"Only visible to your connection" = "Only visible to your connection";
+"Visible to everyone" = "Visible to everyone";
+"Post" = "Post";
+"Write something..." = "Write something...";
+"Selected Tags" = "Selected Tags";
+"Suggested Tags" = "Suggested Tags";
+"Search tags..." = "Search tags...";
+"Tags" = "Tags";
+"Add at least one tag to help others see your post" = "Add at least one tag to help others see your post";
+"Private" = "Private";
+
+//MARK: Gallery
+"All Photos" = "All Photos";
+"All Videos" = "All Videos";
+"Start Sending Photos" = "Start Sending Photos";
+"In iPhone settings, tap WCEC and turn on Photos" = "In iPhone settings, tap WCEC and turn on Photos";
+"Open Settings" = "Open Settings";
+"Please select at most 10 photos" = "Please select at most 10 photos";
+
+//MARK: Navigation
+"Add" = "Add";
+"Cancel" = "Cancel";
+"Next" = "Next";
+"Save" = "Save";
+"Done" = "Done";
+
+//MARK: Profile
+"Share via" = "Share via";
+"Block" = "Block";
+"Unblock" = "Unblock";
+"You will no longer be connected to " = "You will no longer be connected to %@";
+"mutual connections" = "mutual connections";
+"Mutual Connections" = "Mutual Connections";
+"Basic Info" = "Basic Info";
+"Posts" = "Posts";
+
+//MARK: Newfeed
+"News Feed" = "Newsfeed";
+"Featured Posts" = "Featured Posts";
+"Like" = "Like";
+"Comment" = "Comment";
+"Share" = "Share";
+"Likes" = "Likes";
+"Comments" = "Comments";
+"Shares" = "Shares";
+"See more" = "See more";
+"Tap on + to create a post" = "Tap on + to create a post";
+"Scroll down to see more content" = "Scroll down to see more content";
+"photos" = "photos";
+"photo" = "photo";
+"Confirm" = "Confirm";
+"This post will be deleted and you won't be able to find it anymore." = "This post will be deleted and you won't be able to find it anymore.";
+"Do you want to share this post?" = "Do you want to share this post?";
+"Post has been shared successfully" = "Post has been shared successfully";
+"This comment will be deleted and you won't be able to find it anymore." = "This comment will be deleted and you won't be able to find it anymore.";
+"Please input comment" = "Please input comment";
+"No Result" = "No Result";
+"Edit Post" = "Edit Post";
+"Delete Post" = "Delete Post";
+"Report Post" = "Report Post";
+"Report" = "Report";
+"Please help us understand what is inappropriate to this post" = "Please help us understand what is inappropriate to this post";
+"Report Messages" = "Report Messages";
+"Write down reason for report" = "Write down reason for report";
+"Your report has been sent successfully" = "Your report has been sent successfully";
+"Trending now" = "Trending now";
+"Leave comments…" = "Leave comments…";
+"Photos" = "Photos";
+"Videos" = "Videos";
+
+//MAR: Quotes
+"Skip Intro" = "Skip Intro";
+"See messages from the Directors" = "See messages from the Business Leaders";
+"'s Message" = "'s Message";
+" at " = " at ";
+
+//MARK: My Profile
+"Notifications" = "Notifications";
+"Settings" = "Settings";
+"Enable Notifications" = "Enable Notifications";
+"Language" = "Language";
+"Change Password" = "Change Password";
+"FAQ" = "FAQ";
+"Current password" = "Current password";
+"New password" = "New password";
+"My Profile" = "My Profile";
+"Edit Intro" = "Edit Intro";
+"Create New Post" = "Create New Post";
+"Log Out" = "Log Out";
+"Save error" = "Save error";
+"Saved!" = "Saved!";
+"Your altered image has been saved to your photos." = "Your altered image has been saved to your photos.";
+"Please input your current password" = "Please input your current password";
+"Your password has been changed successfully" = "Your password has been changed successfully";
+"Edit Intro" = "Edit Intro";
+"Edit Occupation" = "Edit Occupation";
+"Password Changed" = "Password Changed";
+"Set your industries to give you more relevant suggestion" = "Set your industries to give you more relevant suggestion";
+"Set your interests to give you more relevant suggestion" = "Set your interests to give you more relevant suggestion";
+
+//MARK: Chat
+"New Conversation" = "New Conversation";
+"You left" = "You left";
+"You can't send messages to this group because you're no longer a participant" = "You can't send messages to this group because you're no longer a participant";
+"Do you really want to decline this conversation" = "Do you really want to decline this conversation?";
+
+//MARK: Message
+"Build up relationship with your connections!" = "Build up relationship with your connections!";
+"Start New Conversation" = "Start New Conversation";
+"New Message" = "New Message";
+"Info" = "Info";
+"Clear Chat" = "Clear Chat";
+"Exit Group" = "Exit Group";
+"Do you want to remove this user" = "Do you want to remove this user?";
+"Do you want to clear chat" = "Do you want to clear chat?";
+"Do you want to exit group" = "Do you want to exit group?";
+"Say something!" = "Say something!";
+" has sent you a message" = " has sent you a message";
+"Delete" = "Delete";
+"Do you really want to delete this conversation?" = "Do you really want to delete this conversation?";
+"You will no longer be a part of this group. You will unable to view or send any chat." = "You will no longer be a part of this group. You will unable to view or send any chat.";
+"Clearing all chat history in this conversation" = "Clearing all chat history in this conversation";
+
+//MARK: Time ago
+"years ago" = "years ago";
+"Last year" = "Last year";
+"months ago" = "months ago";
+"Last month" = "Last month";
+"weeks ago" = "weeks ago";
+"Last week" = "Last week";
+"days ago" = "days ago";
+"Yesterday" = "Yesterday";
+"hours ago" = "hours ago";
+"An hour ago" = "An hour ago";
+"minutes ago" = "minutes ago";
+"A minute ago" = "A minute ago";
+"seconds ago" = "seconds ago";
+"Just now" = "Just now";
+"Participants" = "Participants";
+"Participant" = "Participant";
+"Admin" = "Admin";
+"Please input group name" = "Please input group name";
+"Invited you to this group chat" = "Invited you to this group chat";
+
+//MARK: Guess
+"Please input Where did you hear about us" = "Please input Where did you hear about us";
+
+"Others" = "Others";
+
+
+//MARK: Job TITLE
+"Executive Chairman" = "Executive Chairman";
+"Chairman / President" = "Chairman / President";
+"Board Director" = "Board Director";
+"Partner" = "Partner";
+"Chief Executive Officer" = "Chief Executive Officer";
+"Chief Financial Officer" = "Chief Financial Officer";
+"Chief Operation Officer" = "Chief Operation Officer";
+"Chief Technology Officer" = "Chief Technology Officer";
+"Chief Marketing Officer" = "Chief Marketing Officer";
+"General Manager" = "General Manager";
+"Managing Director" = "Managing Director";
+"Senior Vice-President" = "Senior Vice-President";
+"Vice-President" = "Vice-President";
+"Department Director" = "Department Director";
+"Senior Manager" = "Senior Manager";
+"Manager" = "Manager";
+"Others (please specify)" = "Others (please specify)";
+
+// MARK: INDUSTRY SECTOR
+"Test Civil engineering works" = "Test Civil engineering works";

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostAddTagsViewController" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="notHaveSelectedTagsLabel" destination="ebH-x0-2dD" id="g5X-61-Q7J"/>
+                <outlet property="searchTagsLabel" destination="obt-4j-QGK" id="hSM-oO-mCl"/>
+                <outlet property="selectedTagsTitleLabel" destination="iMv-e5-G8Q" id="Hsl-Q6-ihK"/>
+                <outlet property="selectedTagsView" destination="fGp-Sj-yll" id="32V-GD-SK2"/>
+                <outlet property="suggestedTagsTitleLabel" destination="w8a-6N-XbU" id="0Sj-4Z-D8p"/>
+                <outlet property="suggestedTagsView" destination="kP9-Wk-ipL" id="acd-vf-JlP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qm-Ia-ttX" userLabel="SelectedTagsView">
+                    <rect key="frame" x="0.0" y="20" width="375" height="287.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMv-e5-G8Q">
+                            <rect key="frame" x="15" y="10" width="345" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="XBq-cS-SLg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add at least one tag to help others see your post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebH-x0-2dD">
+                            <rect key="frame" x="15" y="49" width="345" height="44"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-Sj-yll" customClass="TagListView" customModule="Dev_WCEC" customModuleProvider="target">
+                            <rect key="frame" x="15" y="39" width="345" height="233.5"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowSelectLabel" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="removeIconLineColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="0.6028202399" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tagBorderColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.90196078431372551" green="0.34509803921568627" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="scrollVertical" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fGp-Sj-yll" firstAttribute="top" secondItem="iMv-e5-G8Q" secondAttribute="bottom" constant="8" id="280-b0-JsP"/>
+                        <constraint firstItem="ebH-x0-2dD" firstAttribute="leading" secondItem="0qm-Ia-ttX" secondAttribute="leading" constant="15" id="B2w-cy-HUB"/>
+                        <constraint firstItem="fGp-Sj-yll" firstAttribute="leading" secondItem="0qm-Ia-ttX" secondAttribute="leading" constant="15" id="BVU-zz-Gan"/>
+                        <constraint firstAttribute="trailing" secondItem="fGp-Sj-yll" secondAttribute="trailing" constant="15" id="Diw-51-mTQ"/>
+                        <constraint firstAttribute="trailing" secondItem="iMv-e5-G8Q" secondAttribute="trailing" constant="15" id="ILt-FD-L6C"/>
+                        <constraint firstAttribute="trailing" secondItem="ebH-x0-2dD" secondAttribute="trailing" constant="15" id="K4O-FO-VcY"/>
+                        <constraint firstItem="iMv-e5-G8Q" firstAttribute="top" secondItem="0qm-Ia-ttX" secondAttribute="top" constant="10" id="LXV-Pa-zNx"/>
+                        <constraint firstAttribute="bottom" secondItem="fGp-Sj-yll" secondAttribute="bottom" constant="15" id="Uuc-HN-Ogd"/>
+                        <constraint firstItem="iMv-e5-G8Q" firstAttribute="leading" secondItem="0qm-Ia-ttX" secondAttribute="leading" constant="15" id="e7v-hV-ECq"/>
+                        <constraint firstItem="ebH-x0-2dD" firstAttribute="top" secondItem="iMv-e5-G8Q" secondAttribute="bottom" constant="18" id="hO5-hS-6Gw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Uv-yH-tST" userLabel="SearchTagsView">
+                    <rect key="frame" x="0.0" y="307.5" width="375" height="72"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchBlack" translatesAutoresizingMaskIntoConstraints="NO" id="U6y-OC-rte">
+                            <rect key="frame" x="15" y="16" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Ng8-gY-YYU"/>
+                                <constraint firstAttribute="width" constant="40" id="gJJ-Io-5LI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search tags..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obt-4j-QGK">
+                            <rect key="frame" x="63" y="26" width="297" height="19.5"/>
+                            <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEj-Ak-Uhc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                            <connections>
+                                <action selector="onSelectSearchTags:" destination="-1" eventType="touchUpInside" id="74c-NW-oaR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90057069063186646" green="0.90125507116317749" blue="0.9006766676902771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YEj-Ak-Uhc" secondAttribute="trailing" id="37v-2f-rpb"/>
+                        <constraint firstItem="obt-4j-QGK" firstAttribute="leading" secondItem="U6y-OC-rte" secondAttribute="trailing" constant="8" id="Dd2-vH-NF4"/>
+                        <constraint firstAttribute="trailing" secondItem="obt-4j-QGK" secondAttribute="trailing" constant="15" id="GJe-lx-OXw"/>
+                        <constraint firstAttribute="height" constant="72" id="NMr-ng-fGo"/>
+                        <constraint firstAttribute="bottom" secondItem="YEj-Ak-Uhc" secondAttribute="bottom" id="QmC-OO-m0Q"/>
+                        <constraint firstItem="YEj-Ak-Uhc" firstAttribute="leading" secondItem="6Uv-yH-tST" secondAttribute="leading" id="UPh-8x-RwM"/>
+                        <constraint firstItem="YEj-Ak-Uhc" firstAttribute="top" secondItem="6Uv-yH-tST" secondAttribute="top" id="diR-k3-mkq"/>
+                        <constraint firstItem="U6y-OC-rte" firstAttribute="centerY" secondItem="6Uv-yH-tST" secondAttribute="centerY" id="ssY-Aa-bWr"/>
+                        <constraint firstItem="obt-4j-QGK" firstAttribute="centerY" secondItem="6Uv-yH-tST" secondAttribute="centerY" id="wad-uD-dGh"/>
+                        <constraint firstItem="U6y-OC-rte" firstAttribute="leading" secondItem="6Uv-yH-tST" secondAttribute="leading" constant="15" id="zzo-Dt-F69"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oet-Sh-fKg" userLabel="SuggestedTagsView">
+                    <rect key="frame" x="0.0" y="379.5" width="375" height="287.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8a-6N-XbU">
+                            <rect key="frame" x="15" y="10" width="345" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="6Ke-n2-RTz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kP9-Wk-ipL" customClass="TagListView" customModule="Dev_WCEC" customModuleProvider="target">
+                            <rect key="frame" x="15" y="39" width="345" height="233.5"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="enableRemoveButton" value="NO"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowSelectLabel" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="removeButtonIconSize">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="removeIconLineWidth">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="removeIconLineColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="0.6028202399" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tagBorderColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="scrollVertical" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="allowSelectLabelWithoutRemoveButton" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94867008924484253" green="0.94938892126083374" blue="0.94878143072128296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="w8a-6N-XbU" firstAttribute="leading" secondItem="Oet-Sh-fKg" secondAttribute="leading" constant="15" id="48X-HH-pbE"/>
+                        <constraint firstAttribute="trailing" secondItem="w8a-6N-XbU" secondAttribute="trailing" constant="15" id="977-7B-wGY"/>
+                        <constraint firstItem="kP9-Wk-ipL" firstAttribute="top" secondItem="w8a-6N-XbU" secondAttribute="bottom" constant="8" id="EBC-7A-AuR"/>
+                        <constraint firstItem="w8a-6N-XbU" firstAttribute="top" secondItem="Oet-Sh-fKg" secondAttribute="top" constant="10" id="Pex-Av-SYT"/>
+                        <constraint firstAttribute="bottom" secondItem="kP9-Wk-ipL" secondAttribute="bottom" constant="15" id="cMd-9G-esM"/>
+                        <constraint firstAttribute="trailing" secondItem="kP9-Wk-ipL" secondAttribute="trailing" constant="15" id="f5z-VB-402"/>
+                        <constraint firstItem="kP9-Wk-ipL" firstAttribute="leading" secondItem="Oet-Sh-fKg" secondAttribute="leading" constant="15" id="hb7-uE-Lz2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0qm-Ia-ttX" secondAttribute="trailing" id="3CR-oW-3I2"/>
+                <constraint firstItem="Oet-Sh-fKg" firstAttribute="height" secondItem="0qm-Ia-ttX" secondAttribute="height" id="3gR-dE-Ymx"/>
+                <constraint firstItem="Oet-Sh-fKg" firstAttribute="top" secondItem="6Uv-yH-tST" secondAttribute="bottom" id="9fv-K2-Rl7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="0qm-Ia-ttX" secondAttribute="top" id="KJF-jE-xRO"/>
+                <constraint firstItem="6Uv-yH-tST" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Pfu-Dv-Mmu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oet-Sh-fKg" secondAttribute="trailing" id="Q0I-xa-G2H"/>
+                <constraint firstItem="6Uv-yH-tST" firstAttribute="top" secondItem="0qm-Ia-ttX" secondAttribute="bottom" id="Qao-X6-4WX"/>
+                <constraint firstItem="0qm-Ia-ttX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rpx-62-a8c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Oet-Sh-fKg" secondAttribute="bottom" id="Trj-xR-ip1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Uv-yH-tST" secondAttribute="trailing" id="cf4-zH-H0L"/>
+                <constraint firstItem="Oet-Sh-fKg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ua6-1x-EWQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="searchBlack" width="24" height="24"/>
+    </resources>
+</document>

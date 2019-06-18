@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubmittedBeAMemberViewController" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="backMainButton" destination="NYI-MU-nIK" id="CUQ-Wy-6Bg"/>
+                <outlet property="descriptionLabel" destination="sPc-gl-0Ui" id="dhO-gF-H7q"/>
+                <outlet property="loginButton" destination="7Xr-dX-pCS" id="THU-ob-jzC"/>
+                <outlet property="reEnterFormButton" destination="cK3-bF-F85" id="rCe-AN-MJZ"/>
+                <outlet property="titleLabel" destination="oAV-h2-iGR" id="hwi-dP-SCr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYI-MU-nIK">
+                    <rect key="frame" x="16" y="40" width="170" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="ZZw-vU-reS"/>
+                        <constraint firstAttribute="height" constant="50" id="srb-2R-Vmr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="&lt; Back to Main Page">
+                        <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectBackToMainPage:" destination="-1" eventType="touchUpInside" id="j4q-oF-Bzf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail address has been submitted before" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAV-h2-iGR">
+                    <rect key="frame" x="10" y="120" width="355" height="54.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your inbox for an email from us." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-gl-0Ui">
+                    <rect key="frame" x="21" y="203.5" width="335" height="44"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xr-dX-pCS">
+                    <rect key="frame" x="16" y="541" width="345" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Xyr-qM-An1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectLogin:" destination="-1" eventType="touchUpInside" id="EfW-Rz-aCu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK3-bF-F85">
+                    <rect key="frame" x="16" y="604" width="345" height="48"/>
+                    <color key="backgroundColor" red="0.76470588240000004" green="0.12941176469999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Ark-Ff-BdJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Re-enter Form">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectReEnterForm:" destination="-1" eventType="touchUpInside" id="Pwp-Jr-VaO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Xr-dX-pCS" firstAttribute="trailing" secondItem="cK3-bF-F85" secondAttribute="trailing" id="0rO-JI-Coy"/>
+                <constraint firstItem="cK3-bF-F85" firstAttribute="top" secondItem="7Xr-dX-pCS" secondAttribute="bottom" constant="15" id="3ck-VR-0c7"/>
+                <constraint firstItem="oAV-h2-iGR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="5PQ-CB-dhz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oAV-h2-iGR" secondAttribute="trailing" constant="10" id="8ZY-zX-Pwy"/>
+                <constraint firstItem="NYI-MU-nIK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Odt-Ps-uhX"/>
+                <constraint firstItem="7Xr-dX-pCS" firstAttribute="leading" secondItem="cK3-bF-F85" secondAttribute="leading" id="Tvd-ty-MSe"/>
+                <constraint firstItem="sPc-gl-0Ui" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="YHx-Kb-Ik5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sPc-gl-0Ui" secondAttribute="trailing" constant="19" id="YIk-kr-Bm9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cK3-bF-F85" secondAttribute="bottom" constant="15" id="fay-bU-OO9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cK3-bF-F85" secondAttribute="trailing" constant="14" id="gqH-By-5Hg"/>
+                <constraint firstItem="NYI-MU-nIK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="hc6-Vo-z0Z"/>
+                <constraint firstItem="sPc-gl-0Ui" firstAttribute="top" secondItem="oAV-h2-iGR" secondAttribute="bottom" constant="29" id="vME-ej-KKE"/>
+                <constraint firstItem="oAV-h2-iGR" firstAttribute="top" secondItem="NYI-MU-nIK" secondAttribute="bottom" constant="30" id="wtv-ud-64l"/>
+                <constraint firstItem="cK3-bF-F85" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="yD3-C2-kD1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-225.5" y="72.5"/>
+        </view>
+    </objects>
+</document>

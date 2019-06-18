@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wcecFoundersLogo800Dpi" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-w0-2PA">
+                                <rect key="frame" x="15" y="75" width="345" height="122.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jyk-w0-2PA" secondAttribute="height" multiplier="344:122" id="GN9-Px-f45"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="i2X-kv-PIS">
+                                <rect key="frame" x="40" y="260.5" width="295" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i2X-kv-PIS" secondAttribute="height" multiplier="1:1" id="D3J-zn-Mr0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i2X-kv-PIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="RQU-FI-RBq"/>
+                            <constraint firstItem="i2X-kv-PIS" firstAttribute="top" secondItem="Jyk-w0-2PA" secondAttribute="bottom" constant="63" id="SdC-VU-4kG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jyk-w0-2PA" secondAttribute="trailing" constant="15" id="apm-BT-06y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i2X-kv-PIS" secondAttribute="trailing" constant="40" id="lgx-qi-08z"/>
+                            <constraint firstItem="Jyk-w0-2PA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="ubl-ZC-Rhs"/>
+                            <constraint firstItem="Jyk-w0-2PA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zto-78-kxP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashImage" width="294" height="294"/>
+        <image name="wcecFoundersLogo800Dpi" width="344" height="122"/>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckSocialBeMemberViewController" customModule="Dev_WCEC" customModuleProvider="target">
+            <connections>
+                <outlet property="backMainButton" destination="qtz-Kn-rtv" id="qPK-Xe-ye0"/>
+                <outlet property="beMemberButton" destination="Bgx-Rh-9JP" id="vYU-wR-cha"/>
+                <outlet property="descriptionLabel" destination="L1C-Ab-m3M" id="2ah-vP-kdC"/>
+                <outlet property="loginButton" destination="4yH-oa-1J2" id="Fv8-4u-Hdx"/>
+                <outlet property="titleLabel" destination="0dC-Jq-G6W" id="lc5-ag-XBl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtz-Kn-rtv">
+                    <rect key="frame" x="16" y="40" width="170" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="9Jj-FC-WN3"/>
+                        <constraint firstAttribute="height" constant="50" id="hf2-0M-fTr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="&lt; Back to Main Page">
+                        <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectBackToMain:" destination="-1" eventType="touchUpInside" id="8z8-VW-p4j"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be a Member" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dC-Jq-G6W">
+                    <rect key="frame" x="10" y="120" width="355" height="27.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for using our app. To enjoy the full access of our app, please submit a form of our membership." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1C-Ab-m3M">
+                    <rect key="frame" x="21" y="176" width="335" height="65.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yH-oa-1J2">
+                    <rect key="frame" x="16" y="541" width="345" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="GPy-0E-T42"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectLogin:" destination="-1" eventType="touchUpInside" id="Mem-ek-dU1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-Rh-9JP">
+                    <rect key="frame" x="16" y="604" width="345" height="48"/>
+                    <color key="backgroundColor" red="0.76470588240000004" green="0.12941176469999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="S46-yh-hvi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="Be a Member">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSelectBeAMember:" destination="-1" eventType="touchUpInside" id="khD-OD-M8e"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bgx-Rh-9JP" firstAttribute="top" secondItem="4yH-oa-1J2" secondAttribute="bottom" constant="15" id="BHR-if-ZDt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0dC-Jq-G6W" secondAttribute="trailing" constant="10" id="Fgf-Pb-Zak"/>
+                <constraint firstItem="Bgx-Rh-9JP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GOA-w0-tJW"/>
+                <constraint firstItem="4yH-oa-1J2" firstAttribute="trailing" secondItem="Bgx-Rh-9JP" secondAttribute="trailing" id="N2A-6B-8ll"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L1C-Ab-m3M" secondAttribute="trailing" constant="19" id="SWf-BN-Pm2"/>
+                <constraint firstItem="0dC-Jq-G6W" firstAttribute="top" secondItem="qtz-Kn-rtv" secondAttribute="bottom" constant="30" id="aMB-e4-DfI"/>
+                <constraint firstItem="0dC-Jq-G6W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="aSE-G9-L28"/>
+                <constraint firstItem="L1C-Ab-m3M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="buA-Tt-mhK"/>
+                <constraint firstItem="qtz-Kn-rtv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="k4T-FU-OBN"/>
+                <constraint firstItem="4yH-oa-1J2" firstAttribute="leading" secondItem="Bgx-Rh-9JP" secondAttribute="leading" id="kRj-lA-JMh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Bgx-Rh-9JP" secondAttribute="bottom" constant="15" id="kni-rM-a9i"/>
+                <constraint firstItem="qtz-Kn-rtv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nXc-Br-8wd"/>
+                <constraint firstItem="L1C-Ab-m3M" firstAttribute="top" secondItem="0dC-Jq-G6W" secondAttribute="bottom" constant="29" id="oog-ZJ-in2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bgx-Rh-9JP" secondAttribute="trailing" constant="14" id="uue-4v-OGt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
