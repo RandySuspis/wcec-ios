@@ -169,7 +169,6 @@
 		AE160DC520A43C4E00590499 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE160DC420A43C4E00590499 /* NSObjectExtension.swift */; };
 		AE2099C420DB5651002B9B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEA949D209C01C000B13604 /* Assets.xcassets */; };
 		AE2099C920DB95C2002B9B00 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE154BAC20DA6F9B0057A2E0 /* DataManager.swift */; };
-		AE20C24920DA30180007EFD0 /* WCECShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEE7710620DA12690033F5AC /* WCECShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AE2165DE20CF81CC0032BE48 /* SearchTagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2165DC20CF81CC0032BE48 /* SearchTagsViewController.swift */; };
 		AE2165DF20CF81CC0032BE48 /* SearchTagsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2165DD20CF81CC0032BE48 /* SearchTagsViewController.xib */; };
 		AE2EB54920CFBD63001A9BC2 /* NewsfeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2EB54820CFBD63001A9BC2 /* NewsfeedService.swift */; };
@@ -582,28 +581,7 @@
 			remoteGlobalIDString = AE49B9292091921400F22524;
 			remoteInfo = BaseProject;
 		};
-		AEE7710E20DA12690033F5AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE49B9222091921400F22524 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEE7710520DA12690033F5AC;
-			remoteInfo = WCECShareExtension;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		AE20C24820DA2FD60007EFD0 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				AE20C24920DA30180007EFD0 /* WCECShareExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1400DD6A042C2D430D3BB3C9 /* Pods_WCECShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCECShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3262,13 +3240,11 @@
 				AE49B9282091921400F22524 /* Resources */,
 				EC3615A4D7202AF58B09E714 /* [CP] Embed Pods Frameworks */,
 				617FCC28650B505010D2FBEC /* [CP] Copy Pods Resources */,
-				AE20C24820DA2FD60007EFD0 /* Embed App Extensions */,
 				AE763C5E213FC4440092F522 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AEE7710F20DA12690033F5AC /* PBXTargetDependency */,
 			);
 			name = WCEC;
 			productName = BaseProject;
@@ -3343,7 +3319,7 @@
 				TargetAttributes = {
 					AE49B9292091921400F22524 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -3365,7 +3341,7 @@
 					};
 					AEE7710520DA12690033F5AC = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -3682,7 +3658,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 579afec999132516e203ee730769206b0446d447 a6506f6d171d7a073ec173b80f5b179a34854b0e0bd0d80713a3c2cb9ed66c53";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 579afec999132516e203ee730769206b0446d447 a6506f6d171d7a073ec173b80f5b179a34854b0e0bd0d80713a3c2cb9ed66c53\n";
 		};
 		B6D5F774B811C816DAAB36A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4192,11 +4168,6 @@
 			target = AE49B9292091921400F22524 /* WCEC */;
 			targetProxy = AE49B94A2091921400F22524 /* PBXContainerItemProxy */;
 		};
-		AEE7710F20DA12690033F5AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEE7710520DA12690033F5AC /* WCECShareExtension */;
-			targetProxy = AEE7710E20DA12690033F5AC /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -4369,15 +4340,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E43512000386357551539D4F /* Pods-WCEC.dev-debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				API_URL = "http://dev-wcec.rmlbs.co/api/";
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4386,10 +4355,8 @@
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
 				LINE_CHANNEL_ID = 1582993905;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ab79a808-0f46-4e4b-b6c5-2c68d7bd4bf6";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Dev";
 				PUBNUB_PUBLISH_KEY = "pub-c-c6e6d46f-62ee-4890-a590-4b1e5073f6d3";
 				PUBNUB_SECRET_KEY = "sec-c-YzJmNzUzMGYtMjdiMS00ZGVkLWEwYTktZjVhZGYxZTI1ZDgw";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-b90f112c-781f-11e8-bf94-e222e63eed43";
@@ -4403,15 +4370,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48A6CFFE67242C1EA2805B56 /* Pods-WCEC.dev-release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4419,10 +4383,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ed907ab-158d-4ca4-8bf7-b63904c22a5f";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Dev Inhouse";
 				PUBNUB_PUBLISH_KEY = "pub-c-c6e6d46f-62ee-4890-a590-4b1e5073f6d3";
 				PUBNUB_SECRET_KEY = "sec-c-YzJmNzUzMGYtMjdiMS00ZGVkLWEwYTktZjVhZGYxZTI1ZDgw";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-b90f112c-781f-11e8-bf94-e222e63eed43";
@@ -4569,15 +4531,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5C8463971BE72A8F0FE3285 /* Pods-WCEC.stg-debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				APP_BUNDLE_SUBFIX = .stg;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4585,10 +4545,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "74acd86d-97b8-41b7-b2fd-f8cab4c552e1";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Stg";
 				PUBNUB_PUBLISH_KEY = "pub-c-1c5683d3-6ed1-4fc6-a884-86bbd2c52a5c";
 				PUBNUB_SECRET_KEY = "sec-c-YzM4ZWE4ZmItOTNlNy00NjQwLWI1NzQtOTFkMjc3MTBiNzM5";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-e0190644-7f6b-11e8-87b9-fef23122526a";
@@ -4695,16 +4653,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7483FF089F197BEB69623A1 /* Pods-WCEC.stg-release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				APP_BUNDLE_SUBFIX = .stg;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4712,10 +4667,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3c04c626-b0bf-44a6-aa33-cbb7885c6945";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Stg Inhouse";
 				PUBNUB_PUBLISH_KEY = "pub-c-1c5683d3-6ed1-4fc6-a884-86bbd2c52a5c";
 				PUBNUB_SECRET_KEY = "sec-c-YzM4ZWE4ZmItOTNlNy00NjQwLWI1NzQtOTFkMjc3MTBiNzM5";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-e0190644-7f6b-11e8-87b9-fef23122526a";
@@ -4829,15 +4782,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 973501E7CBD537823FBD5A23 /* Pods-WCEC.prelive-debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				APP_BUNDLE_SUBFIX = .prelive;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4845,10 +4796,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23db2c45-b3fa-4c6e-b8d2-0add183c5c8d";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Prelive";
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4952,14 +4901,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FFE015A289F9EE5EEEDDE0D /* Pods-WCEC.prelive-release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				APP_BUNDLE_SUBFIX = .prelive;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4967,10 +4915,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "23db2c45-b3fa-4c6e-b8d2-0add183c5c8d";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Prelive";
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5081,13 +5027,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B26503B9424915530C94691 /* Pods-WCEC.live-debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5095,10 +5040,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3361c65d-82ef-44e8-9523-d261272a4da7";
-				PROVISIONING_PROFILE_SPECIFIER = GemAppDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5202,14 +5145,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30B763B4CBBC929A721E9AE0 /* Pods-WCEC.live-release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "WCEC/Dev-WCEC.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88T4NZD2ZX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5217,10 +5158,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC$APP_BUNDLE_SUBFIX;
+				PRODUCT_BUNDLE_IDENTIFIER = randy.com.gem.WCEC.dev;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3361c65d-82ef-44e8-9523-d261272a4da7";
-				PROVISIONING_PROFILE_SPECIFIER = GemAppDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5293,12 +5232,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5322,8 +5261,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC.dev.WCECShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ab2372d5-1b49-482b-9568-b61fced4040a";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Dev ShareExtension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -5365,12 +5303,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5387,8 +5325,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC.stg.WCECShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "75a43115-46cf-40e8-b01b-7818ba0d2633";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Stg Share Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -5430,12 +5367,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5494,12 +5431,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5558,12 +5495,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5580,8 +5517,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC.dev.WCECShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1386fccf-50e9-4608-adbe-f12c13d4c7e8";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Dev Inhouse ShareExtension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -5623,12 +5559,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 65MUWGJ9FF;
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5645,8 +5581,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.WCEC.stg.WCECShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f51b874b-cd9c-480f-bf4f-263fb05fcf9e";
-				PROVISIONING_PROFILE_SPECIFIER = "WCEC Stg Inhouse Share Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -5688,12 +5623,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5752,12 +5687,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = WCECShareExtension/WCECShareExtension.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = Automatic;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LX2Y5Y4X4M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5800,7 +5735,7 @@
 				AE49B97D2091AB8A00F22524 /* Live-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Dev-Release";
+			defaultConfigurationName = "Live-Release";
 		};
 		AE49B9522091921400F22524 /* Build configuration list for PBXNativeTarget "WCEC" */ = {
 			isa = XCConfigurationList;
@@ -5815,7 +5750,7 @@
 				AE49B97E2091AB8A00F22524 /* Live-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Dev-Release";
+			defaultConfigurationName = "Live-Release";
 		};
 		AE49B9552091921400F22524 /* Build configuration list for PBXNativeTarget "WCECTests" */ = {
 			isa = XCConfigurationList;
@@ -5830,7 +5765,7 @@
 				AE49B97F2091AB8A00F22524 /* Live-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Dev-Release";
+			defaultConfigurationName = "Live-Release";
 		};
 		AE49B9582091921400F22524 /* Build configuration list for PBXNativeTarget "WCECUITests" */ = {
 			isa = XCConfigurationList;
@@ -5845,7 +5780,7 @@
 				AE49B9802091AB8A00F22524 /* Live-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Dev-Release";
+			defaultConfigurationName = "Live-Release";
 		};
 		AEE7711A20DA12690033F5AC /* Build configuration list for PBXNativeTarget "WCECShareExtension" */ = {
 			isa = XCConfigurationList;
@@ -5860,7 +5795,7 @@
 				AEE7711920DA12690033F5AC /* Live-Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Dev-Release";
+			defaultConfigurationName = "Live-Release";
 		};
 /* End XCConfigurationList section */
 	};
