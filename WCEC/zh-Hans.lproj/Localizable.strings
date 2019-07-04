@@ -220,7 +220,7 @@
 "Posts" = "贴文";
 
 //MARK: Newfeed
-"News Feed" = "动态";
+"News Feed" = "贴文";
 "Featured Posts" = "最新信息";
 "Like" = "赞";
 "Comment" = "留言";
@@ -262,7 +262,7 @@
 "Skip Intro" = "跳过简介";
 "See messages from the Directors" = "翘楚名言";
 "'s Message" = "的信息";
-" at " = " at  (Chinese)";
+" at " = " at ";
 
 //MARK: My Profile
 "Notifications" = "通知";
@@ -289,7 +289,7 @@
 "Set your interests to give you more relevant suggestion" = "请输入“兴趣”栏目，以便获取更多相关的人脉建议";
 
 //MARK: Chat
-"New Conversation" = "新对话";
+"New Conversation" = "最新信息";
 "You left" = "已退出";
 "You can't send messages to this group because you're no longer a participant" = "您已退出群组，再也无法发送信息";
 "Do you really want to decline this conversation" = "确定要回拒吗？";

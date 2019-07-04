@@ -73,7 +73,13 @@ class RegistrationViewController: BaseViewController {
                 self.countrySource = response.data
                 var dataSource = [String]()
                 for model in self.countrySource {
-                    dataSource.append(model.name)
+                    let countryCh = model.name.localized();
+                    if (model.name != countryCh){
+                        dataSource.append(countryCh + " - " + model.name)
+                    }else{
+                        dataSource.append(model.name)
+                    }
+                    
                 }
                 self.locationView.searchDataSource = dataSource
                 break

@@ -53,6 +53,7 @@ class PopupSendRequest: BasePopup {
                                                selector: #selector(handleKeyboardNotification),
                                                name: NSNotification.Name.UIKeyboardWillHide,
                                                object: nil)
+        setupLocalized()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
