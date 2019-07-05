@@ -43,6 +43,7 @@ class RegistrationViewController: BaseViewController {
         mobileView.title = "Mobile No.".localized()
         locationView.title = "Location".localized()
         reasonView.title = "Where did you hear about us?".localized()
+        self.sendRequestButton.titleLabel?.text = "Send Request".localized()
     }
     
     func setupUI() {
@@ -73,6 +74,7 @@ class RegistrationViewController: BaseViewController {
             case .success(let response):
                 self.countrySource = response.data
                 var dataSource = [String]()
+                let current = Localize.currentLanguage()
                 Localize.setCurrentLanguage("zh-Hans")
                 for model in self.countrySource {
                     let countryCh = model.name.localized();
@@ -83,7 +85,7 @@ class RegistrationViewController: BaseViewController {
                     }
                     
                 }
-                Localize.setCurrentLanguage("en")
+                Localize.setCurrentLanguage(current)
                 self.locationView.searchDataSource = dataSource
                 break
             case .failure( let error):

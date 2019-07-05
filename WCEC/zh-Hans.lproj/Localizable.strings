@@ -142,8 +142,8 @@
 "Search your connections…" = "搜索人脉网络";
 "Send Request" = "发送请求";
 "Hi, add me to your connection?" = "您好，能把我加为好友吗？";
-"Hi, let’s connect" = "一起交流、拓展人脉";
-"Hi, let’s connect." = "一起交流、拓展人脉.";
+"Hi, let's connect" = "一起交流、拓展人脉";
+"Hi, let's connect." = "一起交流、拓展人脉.";
 
 "Add" = "添加";
 "View" = "阅览";
@@ -221,7 +221,7 @@
 
 //MARK: Newfeed
 "News Feed" = "贴文";
-"Featured Posts" = "精选";
+"Featured Posts" = "精选贴文";
 "Like" = "赞";
 "Comment" = "留言";
 "Share" = "分享";
@@ -290,6 +290,7 @@
 
 //MARK: Chat
 "New Conversation" = "最新信息";
+"新对话" = "最新信息";
 "You left" = "已退出";
 "You can't send messages to this group because you're no longer a participant" = "您已退出群组，再也无法发送信息";
 "Do you really want to decline this conversation" = "确定要回拒吗？";
@@ -684,3 +685,36 @@
 "Zambia" = "赞比亚";
 "Zimbabwe" = "津巴布韦";
 
+"Anguilla" = "安圭拉";
+"Antarctica" = "南極洲";
+
+"Bolivia Plurinational State of" = "玻利維亞多民族國家";
+"British Indian Ocean Territory" = "英屬印度洋領地";
+
+"Cape Verde" = "佛得角";
+"Christmas Island" = "聖誕島";
+"Cocos (Keeling) Islands" = "科科斯基林群島";
+"Cook Islands" = "庫克群島";
+
+"Falkland Islands (Malvinas)" = "福克蘭群島馬爾維納斯群島";
+"French Guiana" = "法屬圭亞那";
+
+"Holy See (Vatican City State)" = "聖潔的梵蒂岡城";
+
+"Jersey" = "球衣";
+
+"Land Islands" = "陸地島嶼";
+"Libyan Arab Jamahiriya" = "利比亞阿拉伯";
+
+"Netherlands Antilles" = "荷屬安的列斯";
+"Northern Mariana Islands" = "北馬里亞納群島";
+
+"Palestinian Territory, Occupied" = "巴勒斯坦領土被佔領";
+
+"Réunion" = "團圓";
+
+"Saint Barthélemy" = "聖巴泰勒米";
+"Saint Martin" = "聖馬丁";
+"Saint Pierre and Miquelon" = "聖皮埃爾和密克隆";
+"South Georgia and the South Sandwich Islands" = "南佐治亚";
+"Svalbard and Jan Mayen" = "斯瓦尔巴";

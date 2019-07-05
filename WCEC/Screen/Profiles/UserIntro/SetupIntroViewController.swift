@@ -124,6 +124,7 @@ class SetupIntroViewController: BaseViewController {
             case .success(let response):
                 self.countrySource = response.data
                 var dataSource = [String]()
+                let current = Localize.currentLanguage()
                 Localize.setCurrentLanguage("zh-Hans")
                 for model in self.countrySource {
                     let countryCh = model.name.localized();
@@ -134,7 +135,7 @@ class SetupIntroViewController: BaseViewController {
                     }
                     
                 }
-                Localize.setCurrentLanguage("en")
+                Localize.setCurrentLanguage(current)
                 self.locationViewContainer.searchDataSource = dataSource
                 break
             case .failure( let error):

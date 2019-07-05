@@ -114,6 +114,7 @@ class OccupationViewController: BaseViewController {
         dateToView.title = "To".localized()
         descView.title = "Description".localized()
         dateToView.date = "Present".localized()
+        self.sendRequestButton.titleLabel?.text = "Send Request".localized()
     }
     
     func getJobTitles() {
@@ -138,6 +139,7 @@ class OccupationViewController: BaseViewController {
             case .success(let response):
                 self.countrySource = response.data
                 var dataSource = [String]()
+                let current = Localize.currentLanguage()
                 Localize.setCurrentLanguage("zh-Hans")
                 for model in self.countrySource {
                     let countryCh = model.name.localized();
@@ -148,7 +150,7 @@ class OccupationViewController: BaseViewController {
                     }
                     
                 }
-                Localize.setCurrentLanguage("en")
+                Localize.setCurrentLanguage(current)
                 self.hqLocationView.searchDataSource = dataSource
                 self.currentLocationView.searchDataSource = dataSource
                 break

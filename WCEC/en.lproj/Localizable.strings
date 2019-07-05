@@ -142,8 +142,8 @@
 "Search your connections…" = "Search your connections…";
 "Send Request" = "Send Request";
 "Hi, add me to your connection?" = "Hi, add me to your connection?";
-"Hi, let’s connect" = "Hi, let’s connect";
-"Hi, let’s connect." = "Hi, let’s connect.";
+"Hi, let's connect" = "Hi, let’s connect";
+"Hi, let's connect." = "Hi, let’s connect.";
 
 "Add" = "Add";
 "View" = "View";
@@ -291,6 +291,7 @@
 
 //MARK: Chat
 "New Conversation" = "New Conversation";
+"新对话" = "New Conversation";
 "You left" = "You left";
 "You can't send messages to this group because you're no longer a participant" = "You can't send messages to this group because you're no longer a participant";
 "Do you really want to decline this conversation" = "Do you really want to decline this conversation?";
@@ -682,3 +683,37 @@
 
 "Zambia" = "Zambia";
 "Zimbabwe" = "Zimbabwe";
+
+"Anguilla" = "Anguilla";
+"Antarctica" = "Antarctica";
+
+"Bolivia Plurinational State of" = "Bolivia Plurinational State of";
+"British Indian Ocean Territory" = "British Indian Ocean Territory";
+
+"Cape Verde" = "Cape Verde";
+"Christmas Island" = "Christmas Island";
+"Cocos (Keeling) Islands" = "Cocos (Keeling) Islands";
+"Cook Islands" = "Cook Islands";
+
+"Falkland Islands (Malvinas)" = "Falkland Islands (Malvinas)";
+"French Guiana" = "French Guiana";
+
+"Holy See (Vatican City State)" = "Holy See (Vatican City State)";
+
+"Jersey" = "Jersey";
+
+"Land Islands" = "Land Islands";
+"Libyan Arab Jamahiriya" = "Libyan Arab Jamahiriya";
+
+"Netherlands Antilles" = "Netherlands Antilles";
+"Northern Mariana Islands" = "Northern Mariana Islands";
+
+"Palestinian Territory, Occupied" = "Palestinian Territory, Occupied";
+
+"Réunion" = "Réunion";
+
+"Saint Barthélemy" = "Saint Barthélemy";
+"Saint Martin" = "Saint Martin";
+"Saint Pierre and Miquelon" = "Saint Pierre and Miquelon";
+"South Georgia and the South Sandwich Islands" = "South Georgia and the South Sandwich Islands";
+"Svalbard and Jan Mayen" = "Svalbard and Jan Mayen";

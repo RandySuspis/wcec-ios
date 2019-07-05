@@ -29,7 +29,7 @@ class MessageTableViewCell: UITableViewCell {
     
     func bindingWithModel(_ rowModel: MessagesRowModel) {
         self.rowModel = rowModel
-        titleLabel.text = rowModel.title
+        titleLabel.text = rowModel.title.localized()
         userLabel.text = rowModel.nameUser
         descLabel.text = rowModel.desc
         timeLabel.text = rowModel.time

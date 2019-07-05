@@ -53,7 +53,7 @@ class PopupSendRequest: BasePopup {
                                                selector: #selector(handleKeyboardNotification),
                                                name: NSNotification.Name.UIKeyboardWillHide,
                                                object: nil)
-        setupLocalized()
+        self.setupLocalized()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -78,6 +78,7 @@ class PopupSendRequest: BasePopup {
         textViewMsg.autocorrectionType = .no
         lblSendSuccess.isHidden = true
         imgSendSuccess.isHidden = true
+        self.setupLocalized()
     }
 
     @objc func handleKeyboardNotification(_ notification: Notification) {
@@ -126,8 +127,8 @@ class PopupSendRequest: BasePopup {
     }
     
     override func setupLocalized() {
-        btnSendRequest.titleLabel?.text = "Send Request".localized()
-//        textViewMsg.text = "Hi, add me to your connection?".localized()
+        btnSendRequest.setTitle("Send Request".localized(), for: .normal)
+        textViewMsg.text = "Hi, add me to your connection?".localized()
     }
     
     @IBAction func btnClose_Action(_ sender: Any) {

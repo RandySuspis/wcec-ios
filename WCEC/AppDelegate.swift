@@ -89,9 +89,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener, UI
         if DataManager.getCurrentUserModel()?.pubNubAuthKey == "" {
             return
         }
+        // randy
+//        publish_key = "pub-c-b7e569ef-7a1b-4cf0-a3f1-5bf18f4f323c"
+//        secret_key = "sub-c-82c95084-9eff-11e9-afe0-966e26ff0ecc"
+//        subscribe_key = "sub-c-b90f112c-781f-11e8-bf94-e222e63eed43"
+//         old dev dev
+//        public_Key = "pub-c-c6e6d46f-62ee-4890-a590-4b1e5073f6d3"
+//        secret_key = "sec-c-YzJmNzUzMGYtMjdiMS00ZGVkLWEwYTktZjVhZGYxZTI1ZDgw"
+//        subscribe_key = "sub-c-b90f112c-781f-11e8-bf94-e222e63eed43"
+//         old live key
+//        public_Key = "pub-c-1c5683d3-6ed1-4fc6-a884-86bbd2c52a5c"
+//        secret_key = "sec-c-YzM4ZWE4ZmItOTNlNy00NjQwLWI1NzQtOTFkMjc3MTBiNzM5"
+//        subscribe_key = "sub-c-e0190644-7f6b-11e8-87b9-fef23122526a"
         
-        let pubNub_publish_key = Bundle.main.object(forInfoDictionaryKey: "PUBNUB_PUBLISH_KEY") as! String
-        let pubNub_subscribe_key = Bundle.main.object(forInfoDictionaryKey: "PUBNUB_SUBSCRIBE_KEY") as! String
+        let pubNub_publish_key = "pub-c-1c5683d3-6ed1-4fc6-a884-86bbd2c52a5c"
+        let pubNub_subscribe_key = "sub-c-e0190644-7f6b-11e8-87b9-fef23122526a"
         
         let config = PNConfiguration(publishKey: pubNub_publish_key, subscribeKey: pubNub_subscribe_key)
         config.authKey = DataManager.getCurrentUserModel()?.pubNubAuthKey
