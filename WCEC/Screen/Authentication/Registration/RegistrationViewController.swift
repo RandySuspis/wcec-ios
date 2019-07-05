@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Localize_Swift
 
 class RegistrationViewController: BaseViewController {
 
@@ -72,15 +73,17 @@ class RegistrationViewController: BaseViewController {
             case .success(let response):
                 self.countrySource = response.data
                 var dataSource = [String]()
+                Localize.setCurrentLanguage("zh-Hans")
                 for model in self.countrySource {
                     let countryCh = model.name.localized();
                     if (model.name != countryCh){
-                        dataSource.append(countryCh + " - " + model.name)
+                        dataSource.append(model.name + " - " + countryCh)
                     }else{
                         dataSource.append(model.name)
                     }
                     
                 }
+                Localize.setCurrentLanguage("en")
                 self.locationView.searchDataSource = dataSource
                 break
             case .failure( let error):

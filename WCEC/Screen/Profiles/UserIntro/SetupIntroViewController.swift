@@ -10,6 +10,7 @@ import UIKit
 import DropDown
 import Kingfisher
 import CropViewController
+import Localize_Swift
 
 class SetupIntroViewController: BaseViewController {
     @IBOutlet weak var fisrtNameViewContainer: CustomTextField!
@@ -123,9 +124,17 @@ class SetupIntroViewController: BaseViewController {
             case .success(let response):
                 self.countrySource = response.data
                 var dataSource = [String]()
+                Localize.setCurrentLanguage("zh-Hans")
                 for model in self.countrySource {
-                    dataSource.append(model.name)
+                    let countryCh = model.name.localized();
+                    if (model.name != countryCh){
+                        dataSource.append(model.name + " - " + countryCh)
+                    }else{
+                        dataSource.append(model.name)
+                    }
+                    
                 }
+                Localize.setCurrentLanguage("en")
                 self.locationViewContainer.searchDataSource = dataSource
                 break
             case .failure( let error):

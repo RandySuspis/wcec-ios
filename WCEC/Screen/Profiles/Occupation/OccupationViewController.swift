@@ -138,9 +138,17 @@ class OccupationViewController: BaseViewController {
             case .success(let response):
                 self.countrySource = response.data
                 var dataSource = [String]()
+                Localize.setCurrentLanguage("zh-Hans")
                 for model in self.countrySource {
-                    dataSource.append(model.name)
+                    let countryCh = model.name.localized();
+                    if (model.name != countryCh){
+                        dataSource.append(model.name + " - " + countryCh)
+                    }else{
+                        dataSource.append(model.name)
+                    }
+                    
                 }
+                Localize.setCurrentLanguage("en")
                 self.hqLocationView.searchDataSource = dataSource
                 self.currentLocationView.searchDataSource = dataSource
                 break
