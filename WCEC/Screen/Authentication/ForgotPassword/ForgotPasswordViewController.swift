@@ -46,7 +46,7 @@ class ForgotPasswordViewController: BaseViewController {
             return
         }
         self.showHud()
-        userService.doForgotPassword(email: emailView.text!) { (result) in
+        userService.doForgotPassword(email: emailView.textField.text ?? "") { (result) in
             self.hideHude()
             switch result {
             case .success(let response):

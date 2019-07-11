@@ -201,7 +201,7 @@ class RegistrationViewController: BaseViewController {
         
         if  selectedCountry == nil ||
             selectedCountry?.name == "" ||
-            locationView.searchTextField.text != selectedCountry?.name {
+            !(locationView.searchTextField.text!.contains(selectedCountry!.name)){
             return "Please select your country.".localized()
         }
         
@@ -263,7 +263,7 @@ extension RegistrationViewController: CustomTextFieldDelegate, UITextViewDelegat
     
     func textFieldDidSelectSearchOption(_ text: String, view: UIView) {
         for model in countrySource {
-            if model.name == text {
+            if text.contains(model.name) {
                 selectedCountry = model
                 self.mobileView.preTextField.text = selectedCountry?.phone
                 break

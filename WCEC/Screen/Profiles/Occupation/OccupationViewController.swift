@@ -239,13 +239,13 @@ class OccupationViewController: BaseViewController {
         
         if  hqCountrySelected == nil ||
             hqCountrySelected?.name == "" ||
-            hqLocationView.searchTextField.text != hqCountrySelected?.name {
+            !(hqLocationView.searchTextField.text!.contains(hqCountrySelected!.name)){
             return "Please select hq location.".localized()
         }
         
         if  currentCountrySelected == nil ||
             currentCountrySelected?.name == "" ||
-            currentLocationView.searchTextField.text != currentCountrySelected?.name {
+            !(currentLocationView.searchTextField.text!.contains(currentCountrySelected!.name)){
             return "Please select current location.".localized()
         }
         
@@ -332,7 +332,7 @@ extension OccupationViewController: CustomTextFieldDelegate {
         switch view {
         case hqLocationView:
             for model in countrySource {
-                if model.name == text {
+                if text.contains(model.name) {
                     hqCountrySelected = model
                     break
                 }
@@ -340,7 +340,7 @@ extension OccupationViewController: CustomTextFieldDelegate {
             break
         case currentLocationView:
             for model in countrySource {
-                if model.name == text {
+                if text.contains(model.name) {
                     currentCountrySelected = model
                     break
                 }
