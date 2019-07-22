@@ -275,11 +275,11 @@ class SetupIntroViewController: BaseViewController {
         if yearOfBirthViewContainer.textField.text?.count != 4 {
             return "Please input year with format YYYY.".localized()
         }
-        
+      
         if  selectedCountry == nil ||
-            selectedCountry?.name == "" ||
-            locationViewContainer.searchTextField.text != selectedCountry?.name {
-            return "Please select your country.".localized()
+          selectedCountry?.name == "" ||
+          !(locationViewContainer.searchTextField.text!.contains(selectedCountry!.name)){
+          return "Please select your country.".localized()
         }
         
         var isValidCountryPhoneCode: Bool = false
@@ -416,7 +416,7 @@ extension SetupIntroViewController: CustomTextFieldDelegate, UITextViewDelegate 
     
     func textFieldDidSelectSearchOption(_ text: String, view: UIView) {
         for model in countrySource {
-            if model.name == text {
+            if text.contains(model.name) {
                 selectedCountry = model
                 self.mobileNoViewContainer.preTextField.text = selectedCountry?.phone
                 break
