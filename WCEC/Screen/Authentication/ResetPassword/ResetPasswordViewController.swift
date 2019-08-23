@@ -20,6 +20,7 @@ class ResetPasswordViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        print("fucker")
     }
 
     func setupUI() {
@@ -35,6 +36,7 @@ class ResetPasswordViewController: BaseViewController {
     }
     
     override func backAction() {
+        print("fucker")
         Constants.appDelegate.setupAuthentication()
     }
     
@@ -80,6 +82,7 @@ class ResetPasswordViewController: BaseViewController {
     }
     
     @IBAction func onConfirm(_ sender: Any) {
+      
         guard verifyField() && (activationCode != nil) else {
             return
         }
@@ -98,6 +101,7 @@ class ResetPasswordViewController: BaseViewController {
                                         })
                                         break
                                     case .failure( let error):
+                                        print(error)
                                         self.alertWithError(error)
                                         break
                                     }

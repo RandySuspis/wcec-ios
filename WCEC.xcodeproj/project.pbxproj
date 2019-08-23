@@ -3319,7 +3319,7 @@
 				TargetAttributes = {
 					AE49B9292091921400F22524 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -4345,9 +4345,9 @@
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4356,8 +4356,9 @@
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
 				LINE_CHANNEL_ID = 1582993905;
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBNUB_PUBLISH_KEY = "pub-c-c6e6d46f-62ee-4890-a590-4b1e5073f6d3";
 				PUBNUB_SECRET_KEY = "sec-c-YzJmNzUzMGYtMjdiMS00ZGVkLWEwYTktZjVhZGYxZTI1ZDgw";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-b90f112c-781f-11e8-bf94-e222e63eed43";
@@ -4376,9 +4377,9 @@
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4386,8 +4387,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBNUB_PUBLISH_KEY = "pub-c-c6e6d46f-62ee-4890-a590-4b1e5073f6d3";
 				PUBNUB_SECRET_KEY = "sec-c-YzJmNzUzMGYtMjdiMS00ZGVkLWEwYTktZjVhZGYxZTI1ZDgw";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-b90f112c-781f-11e8-bf94-e222e63eed43";
@@ -4540,9 +4542,9 @@
 				APP_BUNDLE_SUBFIX = .stg;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4550,8 +4552,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBNUB_PUBLISH_KEY = "pub-c-1c5683d3-6ed1-4fc6-a884-86bbd2c52a5c";
 				PUBNUB_SECRET_KEY = "sec-c-YzM4ZWE4ZmItOTNlNy00NjQwLWI1NzQtOTFkMjc3MTBiNzM5";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-e0190644-7f6b-11e8-87b9-fef23122526a";
@@ -4664,9 +4667,9 @@
 				APP_BUNDLE_SUBFIX = .stg;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4674,8 +4677,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PUBNUB_PUBLISH_KEY = "pub-c-1c5683d3-6ed1-4fc6-a884-86bbd2c52a5c";
 				PUBNUB_SECRET_KEY = "sec-c-YzM4ZWE4ZmItOTNlNy00NjQwLWI1NzQtOTFkMjc3MTBiNzM5";
 				PUBNUB_SUBSCRIBE_KEY = "sub-c-e0190644-7f6b-11e8-87b9-fef23122526a";
@@ -4794,9 +4798,9 @@
 				APP_BUNDLE_SUBFIX = .prelive;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4804,8 +4808,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4914,9 +4919,9 @@
 				APP_BUNDLE_SUBFIX = .prelive;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4924,8 +4929,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5040,9 +5046,9 @@
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5050,8 +5056,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5159,9 +5166,9 @@
 				APP_API_URL = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KKHGESP34N;
+				DEVELOPMENT_TEAM = 2CCX444WMU;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = WCEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -5169,8 +5176,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WCEC/Helper/Libraries/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = house.com.gem.WCEC.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sccci.wcec;
 				PRODUCT_NAME = "$(APP_PREFIX)$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WCEC_Adhoc_Profile;
 				SWIFT_OBJC_BRIDGING_HEADER = "WCEC/WCEC-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -39,7 +39,8 @@ class SetPasswordViewController: BaseViewController {
     }
     
     override func setupLocalized() {
-        emailLabel.text = "(Name / E-mail)".localized()
+        emailLabel.text = self.activationCode
+//        emailLabel.text = "(Name / E-mail)".localized()
         titleDescriptionLabel.text = "Thank you for joining us. \nPlease set up your password.".localized()
         passwordViewContainer.title = "Set your password".localized()
         passwordViewContainer.textPlaceHolder = "Enter password".localized()

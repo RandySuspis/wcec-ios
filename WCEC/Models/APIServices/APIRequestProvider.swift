@@ -120,6 +120,7 @@ class APIRequestProvider: NSObject {
                       "password": password,]
         let urlString = requestURL.appending("user/password-reset")
         let url = URL(string: urlString)
+        NSLog(urlString)
         let request = Alamofire.request(url!,
                                         method: .put,
                                         parameters: params,

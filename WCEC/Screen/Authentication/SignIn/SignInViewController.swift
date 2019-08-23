@@ -29,7 +29,7 @@ class SignInViewController: BaseViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        emailViewContainer.text = ""
         passwordViewContainer.isSecure = true
         LineSDKLogin.sharedInstance().delegate = self
     }
@@ -52,8 +52,9 @@ class SignInViewController: BaseViewController {
     // MARK: - IBAction
 
     @IBAction func tapBeMember(_ sender: Any) {
-        let vc = RegistrationViewController()
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        let vc = ResetPasswordViewController()
+//        vc.activationCode = ""
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.pushViewController(vc, animated: false)
     }
     

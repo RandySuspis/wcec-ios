@@ -119,6 +119,8 @@ class APIRequestProvider: NSObject {
         let params = ["code": activationCode,
                       "password": password,]
         let urlString = requestURL.appending("user/password-reset")
+        let customLog = OSLog(subsystem: "com.your_company.your_subsystem_name", category: "Category")
+        os_log(urlString, log: customLog, type: .debug)
         let url = URL(string: urlString)
         let request = Alamofire.request(url!,
                                         method: .put,

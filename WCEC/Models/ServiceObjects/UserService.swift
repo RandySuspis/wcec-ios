@@ -71,8 +71,15 @@ class UserService: APIServiceObject {
     func doResetPassword(password: String, activationCode: String, complete: @escaping(Result<APIResponse<Any, Any>>) -> Void ) {
         let request = APIRequestProvider.shareInstance.resetPassword(activationCode: activationCode,
                                                                           password: password)
+//        let customLog = OSLog(subsystem: "com.your_company.your_subsystem_name", category: "Category")
+        NSLog(activationCode)
+        NSLog(password)
+//        os_log(activationCode, log: customLog, type: .debug)
+//        os_log(, log: customLog, type: .debug)
         self.serviceAgent.startRequest(request) { (data, meta, error) in
             if let err = error {
+                NSLog(err.description)
+                NSLog(err.debugDescription)
                 complete(Result.failure(err))
             } else {
                 complete(Result.success(APIResponse(JSON.null, data: data?.rawString() ?? "")))

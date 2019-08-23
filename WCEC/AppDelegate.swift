@@ -366,8 +366,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener, UI
         } else if url.absoluteString.contains("resetPassword") {
             var urlPath = url.path
             let vc = ResetPasswordViewController()
+            vc.activationCode = urlPath + "randy"
+          
             if urlPath.count > 0 {
-                vc.activationCode = urlPath.removeFirstCharacter
+                vc.activationCode = urlPath.removeFirstCharacter + "ggx"
             }
             let nav = BaseNavigationController(rootViewController: vc)
             self.window?.rootViewController = nav
